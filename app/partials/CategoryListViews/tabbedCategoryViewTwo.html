@@ -1,0 +1,122 @@
+<!-- sports theme tabset -->
+<tabset>
+    <tab heading="Description">
+        <div class="row">
+            <h3>Sports Theme</h3>
+            Job fairs and trade shows are the perfect opportunity to brand yourself and generate sales leads and applicants.
+            The purpose of this theme is designed to create a high energy and conversational environment.
+        </div>
+    </tab>
+    <tab heading="Promo Items">
+        <div class="row">
+            Promotional items can give the visitors of your booth something to hold onto and will make you memorable.
+            Below you will find items that are both effective for both job fairs and trade shows.
+        </div>
+        <br/>
+        <!-- 		<div>WHERE PRODUCT LIST WILL GO FOR PROMOTIONAL ITEMS </div> -->
+        <div ng-show="products">
+            <div class="panel-product-list no-panels robyn-product-list" ng-show="currentCategory.InteropID">
+                <nav class="nav">
+                    <ul>
+                        <li ng-repeat="product in products | filter: {'Grouping': 'Promo' } | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">
+                            <div class="well">
+                                <shortproductview p="product" user="user" />
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <br/>
+        <div class="row">
+            Be sure to bring your business cards. If you don’t already have them, you can order them <a href="product/9EA7ABC5-A677-47AE-8612-565C0E91B0AF" ">here</a>. Please allow 7-10 business days for delivery.
+        </div>
+    </tab>
+    <tab heading="Collateral">
+        <div class="row">
+            Collateral materials can help provide information after the visitor has left your booth and can be a valuable tool to bring them back.
+            Some of these pieces are also customizable, so even after the event is over, there is contact info for your office available at their fingertips.
+        </div>
+        <br/>
+        <div ng-show="products">
+            <div class="panel-product-list no-panels robyn-product-list" ng-show="currentCategory.InteropID">
+                <nav class="nav">
+                    <ul>
+                        <li ng-repeat="product in products | filter: {'Grouping': 'Collateral' } | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">
+                            <div class="well">
+                                <shortproductview p="product" user="user" />
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </tab>
+    <tab heading="Activities">
+        <div class="row">
+            Attracting attention to your booth is a good way to draw a crowd.
+            Having engaging activities will make your booth memorable and possibly bring visitors back.
+            Below you’ll find some recommended activities that are sure to make your booth the hot spot:
+        </div><br/>
+        <div class="row">
+            <div class="col-lg-7 col-lg-offset-2">
+                <ul class="list">
+                    <li><i class="fa fa-camera-retro"></i> Photo booth: these photos can be sent to the visitor for them to post to social media sites such as LinkedIn.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Have a Frisbee toss. This can be made competitive by adding a Frisbee golf element.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Any kind of ball or bean bag toss; score can be tracked with a leaderboard.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Putting green with putt challenge.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> You can use any RC toy to make various kinds of races or challenges.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Place your “bet” on who will win an upcoming game, have people write their name on a ping pong ball and drop it in a container.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Place your “bet” on who will win an upcoming game, have people write their name on a ping pong ball and drop it in a container.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Have a drawing for tickets to an upcoming sport event.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Have a tail gate party with hot dogs and soda.</li>
+                    <br/>
+                    <li><i class="fa fa-angle-right"></i> Dress in sports team gear.</li>
+                </ul>
+            </div>
+        </div>
+    </tab>
+    <tab heading="Tradeshow Reimbursement">
+        <div class="row">
+            Check out these links to learn about the Trade Show Reimbursement program.
+        </div>
+        <br/>
+        <div class="row">
+            <div class="col-lg-3 col-sm-12">
+                <a  class="btn  btn-info btn-variant btn-block " href="http://my/mc/trade-shows/docs/co_opform.doc"><b>Co-op information form</b></a>
+            </div>
+            <div class="col-lg-3 col-sm-12">
+                <a  class="btn  btn-info btn-variant btn-block " href="http://my/mc/trade-shows/docs/followupform.doc"><b>Event Follow Up Form</b></a>
+            </div>
+        </div><br/>
+        <div class="row">
+            <h3>You can use promotional products for your trade show or job fair!</h3>
+        </div>
+        <ol>
+            <li>Order your items for your trade show/job fair event.</li>
+            <br/>
+            <li>You must pay your invoice to Robyn Promotions for the items.</li>
+            <br/>
+            <li>Fill out the first reimbursement form for your first $250.00 reimbursement.
+                Your $250.00 reimbursement will be in your commission check.
+                You will fax the form to Mike Smith at <b>(405)717-5516</b> or email to <a href="mailto:mike.smith@expresspros.com" target="_top">mike.smith@expresspros.com</a>.</li>
+        </ol>
+        <div class="row">
+            <h3>After your trade show or job fair:</h3>
+        </div>
+        <ol>
+            <li>After your trade show or job fair is over and you have followed up on all viable leads complete the Follow-up Form for the final reimbursement of $250.00 for participating in the event marketing co-op program.
+                You will fax the form to Mike Smith at <b>(405)717-5516</b> or email to <a href="mailto:mike.smith@expresspros.com" target="_top">mike.smith@expresspros.com</a>.</li>
+            <br/>
+            <li>Please note that this information should be submitted no later than eight weeks after the scheduled date(s) of your trade show or job fair. Please read both forms.</li>
+        </ol>
+    </tab>
+</tabset>
