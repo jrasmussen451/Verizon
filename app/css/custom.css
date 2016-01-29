@@ -1367,12 +1367,19 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 
 /*?*/
-.imageCatSize .category-display-box figure img {
-    /*max-height: 50px;*/
+/*.imageCatSize .category-display-box figure img {
+    /!*max-height: 50px;*!/
     max-height:224px;
     width: auto;
     margin: 10px;
+}*/
+
+.imageCatSize .category-display-box figure img {
+    margin: 0 5px;
+    max-height: 140px;
+    width: auto;
 }
+
 .imageCatSize .category-display-box figure {
     min-height: 50px;
     min-width: 50px;
@@ -1394,6 +1401,7 @@ a.list-group-item.active:focus .list-group-item-text {
 .category-display-box .lead {
     margin-bottom: 5px;
     font-size: 13px;
+    margin-top: 5px;
     /* we dont need this it overwrites default colors
     color: #0787c4;*/
 }
