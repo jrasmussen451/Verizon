@@ -1,30 +1,30 @@
-.container .navbar-nav li.active a:hover  {background-color: #bb0000;}
-.container .navbar-nav li.active a:focus  {background-color: #bb0000;}
-.navbar-default .navbar-nav .open > a  {background-color: #bb0000;}
-.navbar-default .navbar-nav .open > a:hover  {background-color: #bb0000;}
-.navbar-default .navbar-nav .open > a:focus  {background-color: #bb0000;}
-.navbar-nav li.dropdown li > a:hover  {background-color: #bb0000;}
-.navbar-nav li.dropdown li > a:focus  {background-color: #bb0000;}
-.navbar .container .navbar-nav li.active .fa-caret-down  {color: #bb0000;}
+.container .navbar-nav li.active a:hover  {background-color: #A80309;}
+.container .navbar-nav li.active a:focus  {background-color: #990308;}
+.navbar-default .navbar-nav .open > a  {background-color: #990308;}
+.navbar-default .navbar-nav .open > a:hover  {background-color: #A80309;}
+.navbar-default .navbar-nav .open > a:focus  {background-color: #990308;}
+.navbar-nav li.dropdown li > a:hover  {background-color: #A80309;}
+.navbar-nav li.dropdown li > a:focus  {background-color: #990308;}
+.navbar .container .navbar-nav li.active .fa-caret-down  {color: #990308;}
 .navbar-nav li.dropdown li > a  {color: #333333;}
 .navbar-nav li.dropdown li > a:hover  {color: #FFFFFF;}
 .navbar .container .navbar-nav.pull-right li a i:first-of-type  {border-color: #FFFFFF;}
 .badge  {background-color: #FFFFFF;}
 .badge  {color: #000000;}
-.navbar-default  {background-color: #cf1313;}
+.navbar-default  {background-color: #333;}
 .container .navbar-nav li a  {color: #FFFFFF;}
-.container .navbar-nav li.active > a  {background-color: #bb0000;}
+.container .navbar-nav li.active > a  {background-color: #990308;}
 .container .navbar-nav li.active > a  {color: #FFFFFF;}
 .navbar-default, .dropdown-mega  {border-color: #FFFFFF;}
 body  {background-color: #ffffff;}
 body  {color: #333333;}
 .text-primary  {color: #0C2A3A;}
 .text-info  {color: #31708F;}
-body a  {color: #0C2A3A;}
-.btn-primary  {background-color: #0C2A3A;}
+body a  {color: #0066cc;}
+.btn-primary  {background-color: #333;}
 .btn-primary, .btn-primary:hover  {color: #FFFFFF;}
-.btn-primary  {border-color: #081B24;}
-.btn-primary:hover  {background-color: #051118;}
+.btn-primary  {border-color: #333;}
+.btn-primary:hover  {background-color: #A80309;}
 .btn-default  {background-color: #FFFFFF;}
 .btn-default, .btn-default:hover  {color: #333333;}
 .btn-default  {border-color: #CCCCCC;}

@@ -1,5 +1,5 @@
-four51.app.controller('NavCtrl', ['$location', '$route', '$scope', '$451', 'User', 'Security',
-function ($location, $route, $scope, $451, User, Security) {
+four51.app.controller('NavCtrl', ['$routeParams', '$sce', '$scope', '$451', '$location', '$route', 'User', 'Security', 'Category', 'Product',
+function ($routeParams, $sce, $scope, $451, $location, $route, User, Security, Category, Product) {
     $scope.Logout = function(){
         User.logout();
         if ($scope.isAnon) {
@@ -60,4 +60,30 @@ function ($location, $route, $scope, $451, User, Security) {
     };
 
     $scope.AuthToken = Security.auth();
+
+
+    /*category ctrl stuff*/
+
+    $scope.$watch('settings.currentPage', function(n, o) {
+        if (n != o || (n == 1 && o == 1))
+            _search();
+    });
+
+    if ($routeParams.categoryInteropID) {
+        $scope.categoryLoadingIndicator = true;
+        Category.get($routeParams.categoryInteropID, function(cat) {
+            $scope.currentCategory = cat;
+            $scope.categoryLoadingIndicator = false;
+        });
+    }
+    else if($scope.tree){
+        $scope.currentCategory ={SubCategories:$scope.tree};
+    }
+
+
+    $scope.$on("treeComplete", function(data){
+        if (!$routeParams.categoryInteropID) {
+            $scope.currentCategory ={SubCategories:$scope.tree};
+        }
+    });
 }]);

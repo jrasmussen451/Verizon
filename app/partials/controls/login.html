@@ -13,20 +13,19 @@
                                 <input autofocus class="form-control" type="text" ng-model="credentials.Username" placeholder="{{'Username' | r}}" />
                                 <i class="fa fa-user"></i>
                             </div>
-                            <div ng-show="!PasswordSecurityException">
+                            <div ng-if="!PasswordSecurityException">
                                 <label ng-show="credentials.Password">{{'Password' | r}}</label>
                                 <input class="form-control" type="password" ng-model="credentials.Password" placeholder="{{'Password' | r}}" />
                                 <i class="fa fa-lock"></i>
                             </div>
-                        </div>
-                        <div>
+
                             <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">
                                 If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please provide your email address and your log on information will be emailed to you immediately.
                             </p>
                             <btn class="btn btn-default btn-block" ng-show="!showEmailHelp && !PasswordReset && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">
                                 Need help logging on?
                             </btn>
-                            <div class="view-form-icon" ng-show="showEmailHelp">
+                            <div ng-show="showEmailHelp">
                                 <div>
                                     <label ng-show="credentials.Email">{{'Email' | r}}</label>
                                     <input class="form-control" type="email" ng-model="credentials.Email" placeholder="{{'Email' | r}}" />

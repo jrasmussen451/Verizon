@@ -1,5 +1,5 @@
-#### SE Demos - DemoTemplate1015  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) 
-Last Updated: 12/14/15
+#### SE Demos - Verizon Demo  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) 
+Last Updated: 1/28/16
 ======== 
 
 
@@ -15,7 +15,7 @@ Last Updated: 12/14/15
 
 
 ##### Developers
-Four51: Aisha, Miranda, Jen
+Four51: Jen
 
 ##### Github URL
 * 

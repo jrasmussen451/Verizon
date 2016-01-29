@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>Demo Store</title>
     <link rel="stylesheet" href="css/bootstrap-451.css" data-group="source" />
+
     <link rel="stylesheet" href="css/editor.css" data-group="source" />
     <link rel="stylesheet" href="css/custom.css" data-group="source" />
     <link href='//fonts.googleapis.com/css?family=Droid+Sans:400,700' rel='stylesheet' type='text/css' />
     <link href='//fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css' />
     <link href='//fonts.googleapis.com/css?family=Open+Sans:400,700italic' rel='stylesheet' type='text/css' />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.min.css" />
 
 </head>
@@ -27,9 +29,15 @@
         <section class="hidden-print">
             <navigation />
         </section>
-        <section class="hidden-print">
-            <branding />
+
+        <section class="hidden-print" ng-if="isActive('catalog')">
+            <customcarousel></customcarousel>
         </section>
+
+       <!-- <section class="hidden-print">
+            <branding />
+        </section>-->
+
         <section class="container-view">
             <ng-view autoscroll />
         </section>

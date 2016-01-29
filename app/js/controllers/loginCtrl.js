@@ -17,7 +17,7 @@ function ($scope, $sce, $route, $location, User) {
 		angular.forEach(codes, function(c) {
 			$scope[c] = null;
 		});
-		$scope.credentials.PasswordResetToken = $location.search().token;
+		if ($location.search().token) $scope.credentials.PasswordResetToken = $location.search().token;
 		$scope.PasswordReset ? _reset() : _login();
 	};
 

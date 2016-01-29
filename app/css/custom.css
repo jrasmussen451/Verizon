@@ -3,10 +3,10 @@
 
 /*
 Static file for Theme changes
-Theme name: Cempro - Demo
+Theme name: Verizon Demo
 Version: 2.0
-Last Updated: 10/21/15
-Developers: Miranda, Jen
+Last Updated: 1/28/16
+Developers: Jen
 */
 
 /*Colors:
@@ -15,6 +15,18 @@ Dark Green #00853e
 Lt Gray #
 Dk Gray
 */
+
+.order-cloud .view-form-icon > div:not(.panel-heading) {
+    margin: 15px 0;
+}
+
+.contactus {
+    min-height:432px;
+}
+
+.contactus img {
+    margin-top: 5%;
+}
 
 body {
     margin-bottom: 0;
@@ -27,11 +39,11 @@ a {
 
 a:hover,
 a:focus {
-    color: #cf1313;
+    color: #00478e;
 }
 
 /*login*/
-.order-cloud-image { background-color: #cf1313; }
+.order-cloud-image { background: url('images/custom/background.jpg') no-repeat top center; }
 
 .order-cloud {
     padding: 0 5px;
@@ -53,10 +65,10 @@ a:focus {
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
 }
 
-.order-cloud .form-signin .btn-primary {
-    background-color:#cf1313;
+/*.order-cloud .form-signin .btn-primary {
+    background-color:#A80309;
     color:#fff;
-}
+}*/
 
 .order-cloud .form-signin .btn-default {
     margin-top: 15px;
@@ -105,8 +117,8 @@ a:focus {
 }
 
 .search .btn-primary {
-    background-color: #cf1313;
-    border-color:#cf1313;
+    background-color: #A80309;
+    border-color:#A80309;
     color:#fff;
 }
 /*top header area*/
@@ -127,12 +139,12 @@ a:focus {
     font-weight: bold;
     font-size: 0.8em;
     padding: 2px 4px;
-    background-color: #cf1313;
+    background-color: #A80309;
     color: #fff;
 }
 
 .minicart .fa-caret-down {
-    color: #cf1313;
+    color: #A80309;
 }
 
 .minicart:active .minicart-detail,
@@ -222,13 +234,13 @@ a:focus {
 }
 
 .navbar-default .navbar-nav > li > a {
-    color: #333333;
+    color: #FFF;
 }
 
 .nav .open > a,
 .nav .open > a:hover,
 .nav .open > a:focus {
-    border-color: #005288;
+    border-color: #A80309;
 }
 
 .navbar .nav > li > a {
@@ -236,7 +248,9 @@ a:focus {
 }
 
 .navbar .container .navbar-nav.pull-left li a,
-.navbar .container-view .navbar-nav.pull-left li a {
+.navbar .container-view .navbar-nav.pull-left li a,
+.navbar .container .navbar-nav.pull-right li a,
+.navbar .container-view .navbar-nav.pull-right li a {
     padding: 6px 10px;
 }
 
@@ -250,6 +264,12 @@ a:focus {
 .navbar .nav > li:not(:last-of-type) {
     border-right: 1px solid #f2f2f2;
 }
+/*
+.navbar-nav.pull-right > li {
+    border-left: 1px solid #f2f2f2;
+}
+*/
+
 .navbar .nav > li > a {
     height: auto;
     text-transform: uppercase;
@@ -272,6 +292,19 @@ a:focus {
 }
 /*nav*/
 
+.navbar .container .navbar-nav.pull-left li.fadeInLeft a i,
+.navbar .container-view .navbar-nav.pull-left li.fadeInLeft a i {
+    color: #FFF;
+}
+
+.navbar .container .navbar-nav.pull-right li a i:first-of-type,
+.navbar .container-view .navbar-nav.pull-right li a i:first-of-type {
+    border: 0;
+    border-radius: 0;
+    margin-top: 0;
+    padding: 0 5px;
+    text-align: center;
+}
 
 /*carousel*/
 .jumbotron {
@@ -316,7 +349,7 @@ a:focus {
 }
 
 .btn-primary .badge {
-    color: #cf1313;
+    color: #A80309;
     background-color: #ffffff;
 }
 
@@ -326,16 +359,16 @@ a:focus {
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #ffffff;
-    background-color: #cf1313;
-    border-color: #cf1313;
+    background-color: #A80309;
+    border-color: #A80309;
 }
 
 .btn-primary:active,
 .btn-primary.active,
 .open .dropdown-toggle.btn-primary {
     color: #ffffff;
-    background: none #cf1313;
-    border-color: #cf1313;
+    background: none #A80309;
+    border-color: #A80309;
 }
 
 .btn-primary.disabled,
@@ -353,11 +386,11 @@ fieldset[disabled] .btn-primary:active,
 .btn-primary.disabled.active,
 .btn-primary[disabled].active,
 fieldset[disabled] .btn-primary.active {
-    background-color: #cf1313;
-    border-color: #cf1313;
+    background-color: #A80309;
+    border-color: #A80309;
 }
 .btn-primary .badge {
-    color: #cf1313;
+    color: #A80309;
 }
 
 .btn-group:not(.btn-group-maintain) {
@@ -451,7 +484,7 @@ a.text-primary:hover {
 }
 
 .form-control:focus {
-    border:1px solid #cf1313;
+    border:1px solid #A80309;
 }
 
 /*in shortProductView which needs some work*/
@@ -920,7 +953,7 @@ a.list-group-item.active:focus .list-group-item-text {
     margin-left: 20px;
 }
 .spending-account .fa-caret-down {
-    color:#cf1313;
+    color:#A80309;
 }
 .spending-account:hover .spending-account-list {
     display: block;
@@ -1074,7 +1107,7 @@ a.list-group-item.active:focus .list-group-item-text {
     border-top: none;
 }
 .panel-nav ul li.active a {
-    color: #cf1313;
+    color: #A80309;
 }
 .panel-nav ul li a {
     padding: 0;
@@ -1490,7 +1523,7 @@ form[name="addToOrderForm"]  {
 }
 
 .product-list-qualities-list li, .product-list-qualities-grid li, .product-list-qualities-pdt li {
-    color: #cf1313;
+    color: #A80309;
     font-size: 80%;
 }
 
@@ -1624,7 +1657,7 @@ footer section .row > div {
     padding: 30px 40px;
 }
 footer section:nth-of-type(2) {
-    background-color: #3A3A3A;
+    background-color: #333;
     color: #f2f2f2;
 }
 footer section:nth-of-type(3) {
