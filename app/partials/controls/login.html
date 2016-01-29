@@ -18,24 +18,26 @@
                                 <input class="form-control" type="password" ng-model="credentials.Password" placeholder="{{'Password' | r}}" />
                                 <i class="fa fa-lock"></i>
                             </div>
-
+                        </div>
+                        <div>
                             <p class="alert alert-info" ng-show="showEmailHelp && (!EmailNotFoundException || !PasswordSecurityException)">
                                 If you would like to be reminded of your {{'Username' | r}} or have the option to reset your {{'Password' | r}}, please provide your email address and your log on information will be emailed to you immediately.
                             </p>
                             <btn class="btn btn-default btn-block" ng-show="!showEmailHelp && !PasswordReset && !EmailNotFoundException && !PasswordSecurityException" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Submit'">
                                 Need help logging on?
                             </btn>
-                            <div ng-show="showEmailHelp">
-                                <div>
-                                    <label ng-show="credentials.Email">{{'Email' | r}}</label>
-                                    <input class="form-control" type="email" ng-model="credentials.Email" placeholder="{{'Email' | r}}" />
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                            </div>
-                            <btn class="btn btn-default btn-block" ng-show="showEmailHelp" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Logon'">
-                                Return to logon
-                            </btn>
                         </div>
+                        <div class="view-form-icon" ng-show="showEmailHelp">
+                            <div>
+                                <label ng-show="credentials.Email">{{'Email' | r}}</label>
+                                <input class="form-control" type="email" ng-model="credentials.Email" placeholder="{{'Email' | r}}" />
+                                <i class="fa fa-envelope"></i>
+                            </div>
+                        </div>
+                        <btn class="btn btn-default btn-block" ng-show="showEmailHelp" ng-click="showEmailHelp = !showEmailHelp; buttonText = 'Logon'">
+                            Return to logon
+                        </btn>
+                    </div>
                         <div>
                             <div class="view-form-icon" ng-show="PasswordSecurityException">
                                 <div>

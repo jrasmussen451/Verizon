@@ -1,6 +1,7 @@
 four51.app.controller('LoginCtrl', ['$scope', '$sce', '$route', '$location', 'User',
 function ($scope, $sce, $route, $location, User) {
-    $scope.showCreateNewUser = false;
+
+	//$scope.showCreateNewUser = false;
 	$scope.PasswordReset = $location.search().token != null;
 	var codes = ['PasswordSecurityException'];
 
@@ -9,7 +10,7 @@ function ($scope, $sce, $route, $location, User) {
 	$scope.$on('event:auth-loginFailed', function(event, message) {
 		$scope.loginMessage = message;
 	});
-//Create user panel
+
 	// build a post method for password reset
 	$scope.login = function() {
 		$scope.loginMessage = null;
@@ -26,6 +27,7 @@ function ($scope, $sce, $route, $location, User) {
 			function(user) {
 				delete $scope.PasswordReset;
 				delete $scope.credentials;
+				$scope.buttonText = "Logon";
 				$location.path('catalog');
 			},
 			function(ex) {

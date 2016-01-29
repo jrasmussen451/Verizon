@@ -19,7 +19,7 @@ function largeshipaddresssearch() {
     function template() {
         return [
             '<style>',
-            '.largeaddress .dropdown-menu  { background-color:#fff;}',
+            '.largeaddress .dropdown-menu  {background-color:#fff;}',
             '.largeaddress .dropdown-menu .active > a {background-color:#000 !important; color:#fff;}',
             '.count {float;left; color:#000; position:relative;left: 10px; margin:0; padding:0;}',
             '</style>',
@@ -30,7 +30,8 @@ function largeshipaddresssearch() {
             '<span class="count" ng-show="showResult">No addresses found!</span>',
             '</label>',
             '<div class="form-group">',
-            '<input class="form-control" type="text" ng-model="ShipAddress" required ng-change="searchShipAddresses(ShipAddress)" typeahead-min-length="3" typeahead="address as (address.AddressName + \' \' + (address.FirstName || \'\') + \' \' + (address.LastName || \'\') + \' \' + (address.Street1 || \'\') + \' \' + (address.Street2 || \'\') + \' \' + (address.City || \'\') + \' \' + (address.State || \'\') + \' \' + (address.Zip || \'\')) for address in shipaddresses | filter:$viewValue | limitTo:10" />',
+            '<input class="form-control" type="text" ng-model="ShipAddress" required ng-change="searchShipAddresses(ShipAddress)" typeahead-min-length="3" ' +
+            'typeahead="address as (address.AddressName + \' \' + (address.FirstName || \'\') + \' \' + (address.LastName || \'\') + \' \' + (address.Street1 || \'\') + \' \' + (address.Street2 || \'\') + \' \' + (address.City || \'\') + \' \' + (address.State || \'\') + \' \' + (address.Zip || \'\')) for address in shipaddresses | filter:$viewValue | limitTo:10" />',
             '<i class="fa fa-map-marker"></i>',
             '</div>',
             '</div>',
@@ -49,14 +50,23 @@ function LargeShipAddressSearchCtrl($scope, LargeAddressList, Address) {
     $scope.shipaddresses = [' ']; //this sets shipaddresses to something while we wait for the search so we don't have to modify existing ng-show/hide(s) for address form / ship method
     $scope.shipaddressform = false;
 
+    $scope.$watch('currentOrder.ShipAddressID', function(newValue) {
+        if (newValue) {
+            Address.get($scope.currentOrder.ShipAddressID, function(add) {
+                $scope.ShipAddress = add;
+                $scope.orderShipAddress = add;
+            });
+        }
+    });
+
     $scope.$watch('ShipAddress', function(newValue) {
         if (!newValue || !newValue.ID) {
-            $scope.orderShipAddress = {};
+            //$scope.orderShipAddress = {};
             $scope.currentOrder.ShipAddressID = null;
             $scope.showTip = true;
             $scope.showResult = false;
         }
-        else {
+        if (newValue != null) {
             $scope.orderShipAddress = newValue;
             $scope.currentOrder.ShipAddress = newValue;
             if ($scope.currentOrder) {
@@ -69,10 +79,10 @@ function LargeShipAddressSearchCtrl($scope, LargeAddressList, Address) {
                 });
             }
             if (newValue) {
-                if ($scope.user.Permissions.contains('EditShipToName') && !add.IsCustEditable) {
+                if ($scope.user.Permissions.contains('EditShipToName') && !newValue.IsCustEditable) {
                     angular.forEach($scope.currentOrder.LineItems, function(item) {
-                        item.ShipFirstName = add.FirstName;
-                        item.ShipLastName = add.LastName;
+                        item.ShipFirstName = newValue.FirstName;
+                        item.ShipLastName = newValue.LastName;
                     });
                 }
                 $scope.setShipAddressAtOrderLevel();
@@ -82,6 +92,7 @@ function LargeShipAddressSearchCtrl($scope, LargeAddressList, Address) {
         $scope.$on('event:AddressSaved', function(event, address) {
             if (address.IsShipping) {
                 $scope.ShipAddress = address;
+                $scope.orderShipAddress = address;
             }
         });
 
@@ -104,12 +115,6 @@ function LargeShipAddressSearchCtrl($scope, LargeAddressList, Address) {
             });
         }
     };
-
-    if ($scope.currentOrder.ShipAddressID) {
-        Address.get($scope.currentOrder.ShipAddressID, function(add) {
-            $scope.ShipAddress = add;
-        });
-    }
 }
 
 function largebilladdresssearch() {
@@ -146,27 +151,33 @@ function largebilladdresssearch() {
 LargeBillAddressSearchCtrl.$inject = ['$scope', 'LargeAddressList', 'Address'];
 function LargeBillAddressSearchCtrl($scope, LargeAddressList, Address) {
 
-
-    $scope.billaddresses = [' '];
-    $scope.billaddressform = false;
     $scope.billAddressCount = null;
     $scope.showBillTip = true;
     $scope.showBillResult = false;
 
-    $scope.$watch('BillAddress', function(newValue) {
+    $scope.billaddresses = [' '];
+    $scope.billaddressform = false;
 
+    $scope.$watch('currentOrder.BillAddressID', function(newValue) {
+        if (newValue) {
+            Address.get($scope.currentOrder.BillAddressID, function(add) {
+                $scope.BillAddress = add;
+                $scope.orderBillAddress = add;
+            });
+        }
+    });
+
+    $scope.$watch('BillAddress', function(newValue) {
         if (!newValue || !newValue.ID) {
-            $scope.BillAddressID = null;
             $scope.currentOrder.BillAddressID = null;
+            $scope.BillAddressID = null;
             $scope.showBillTip = true;
             $scope.showBillResult = false;
         }
         else {
             if ($scope.currentOrder) {
-                $scope.currentOrder.BillAddress = newValue;
                 $scope.currentOrder.BillAddressID = newValue.ID;
                 $scope.BillAddressID = newValue.ID;
-                $scope.BillAddress = newValue;
             }
 
         }
@@ -196,13 +207,6 @@ function LargeBillAddressSearchCtrl($scope, LargeAddressList, Address) {
             });
         }
     };
-
-    if ($scope.currentOrder.BillAddressID) {
-        Address.get($scope.currentOrder.BillAddressID, function(add) {
-            $scope.BillAddress = add;
-        });
-    }
-
 }
 
 LargeAddressList.$inject = ['$resource', '$451'];
