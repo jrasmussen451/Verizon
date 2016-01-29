@@ -64,10 +64,10 @@ function ($routeParams, $sce, $scope, $451, $location, $route, User, Security, C
 
     /*category ctrl stuff*/
 
-    $scope.$watch('settings.currentPage', function(n, o) {
+    /*$scope.$watch('settings.currentPage', function(n, o) {
         if (n != o || (n == 1 && o == 1))
             _search();
-    });
+    });*/
 
     if ($routeParams.categoryInteropID) {
         $scope.categoryLoadingIndicator = true;
