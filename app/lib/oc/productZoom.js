@@ -16,14 +16,13 @@ function productzoom() {
         '.jetzoom-blank{ background-color:rgba(0,0,0,.01);) }' +
         '.jetzoom-container img:not(.jetzoom){ display:inline-block;cursor:pointer }' +
         '.jetzoom{ margin:0 auto }' +
-        '.jetzoom.product-image-large { max-height:100% }' +
         '</style>'+
-        '<div class="panel-body">'+
-        '<img class="jetzoom product-image-large img-responsive"/>'+
+        '<div>'+
+        '<img class="jetzoom img-responsive"/>'+
         '</div>',
         link: function($scope) {
             $scope.$watch('lineitem', function(lineitem){
-                if(lineitem.Product && lineitem.Product.StaticSpecGroups.ProductZoom) {
+                if(lineitem.Product) {
                     var options = {
                         tintColor: lineitem.Product.StaticSpecGroups.ProductZoom.Specs.tintClr.Value,
                         tintOpacity: lineitem.Product.StaticSpecGroups.ProductZoom.Specs.tintOpcty.Value,
@@ -45,6 +44,21 @@ function productzoom() {
                         jetZoomInstance.loadImage(lineitem.Product.SmallImageUrl, lineitem.Product.LargeImageUrl);
                     }
                 };
+            }, true);
+
+            $scope.$watch('lineitem.Variant', function(variant){
+                if(!variant) return;
+                var options = {
+                    tintColor: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.tintClr.Value,
+                    tintOpacity: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.tintOpcty.Value,
+                    fadeTime: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.fadeTm.Value,
+                    lensClass: "jetzoom-lens",
+                    lensProportions: "",
+                    lensAutoCircle: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.autoCircle,
+                    innerZoom: $scope.lineitem.Product.StaticSpecGroups.ProductZoom.Specs.iZoom
+                };
+                var jetZoomInstance = new JetZoom($('.jetzoom'), options);
+                jetZoomInstance.loadImage(variant.LargeImageUrl, variant.LargeImageUrl);
             }, true);
 
             // Plugin Code:
