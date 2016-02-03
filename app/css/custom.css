@@ -45,7 +45,7 @@ body {
     margin: 15px 0;
 }
 
-.contactus {
+.contactus, .address-list-view {
     min-height:432px;
 }
 
