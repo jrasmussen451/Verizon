@@ -26,25 +26,33 @@
         <login />
     </section>
     <section ng-if="Four51User.isAuthenticated()" id="content">
+
         <section class="hidden-print">
             <navigation />
+        </section>
+
+        <section class="hidden-print">
+            <hamburgernavigation />
         </section>
 
         <section class="hidden-print hidden-xs" ng-if="isActive('catalog')">
             <customcarousel></customcarousel>
         </section>
 
-       <!-- <section class="hidden-print">
+       <!--<section class="hidden-print">
             <branding />
         </section>-->
 
         <section class="container-view">
             <ng-view autoscroll />
         </section>
+
         <br/><br/><br/>
+
         <footer ng-hide="isActive('cart') || isActive('checkout')">
             <ng-include src="'partials/footer.html'"></ng-include>
         </footer>
+
         <section class="hidden-print">
             <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
         </section>
@@ -85,6 +93,10 @@
 <script src="lib/oc/productZoom.js" data-group="resources"></script>
 <script src="lib/oc/specForms.js" data-group="resources"></script>
 <script src="//cdn.ckeditor.com/4.4.7/basic/ckeditor.js" data-group="cdn"></script>
+
+<script src="lib/oc/categoryModal.js" data-group="resources"></script>
+<script src="lib/oc/hamburgerNavigation.js" data-group="resources"></script>
+<script src="lib/oc/categoryDropdown.js" data-group="resources"></script>
 
 <script src="lib/angular/plugins/compileDirective.js" data-group="resources"></script>
 
@@ -181,7 +193,7 @@
 <script src="js/directives/customphonefield.js" data-group="source"></script>
 <script src="js/directives/customfilefield.js" data-group="source"></script>
 <script src="js/directives/approvalrulelist.js" data-group="source"></script>
-<script src="js/directives/tree.js" data-group="source"></script>
+<!--<script src="js/directives/tree.js" data-group="source"></script>-->
 <script src="js/directives/addressinput.js" data-group="source"></script>
 <script src="js/directives/reporting.js" data-group="source"></script>
 <script src="js/directives/inlineerror.js" data-group="source"></script>

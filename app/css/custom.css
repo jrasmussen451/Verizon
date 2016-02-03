@@ -55,13 +55,8 @@ body {
 
 @media(max-width:767px) {
     .breadcrumb {
-       /* background-color: #f0f0f0;
-        border-radius: 4px;
-        list-style: outside none none;*/
         margin-bottom: 0;
         padding: 0;
-        /*margin-bottom: 20px;
-        padding: 8px 15px;*/
     }
 }
 
@@ -69,21 +64,6 @@ body {
     .dropdown-menu,
     .navbar-nav .open .dropdown-menu {
         background-color: #333;
-        /*background-clip: padding-box;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.176);
-        display: none;
-        float: left;
-        font-size: 14px;
-        left: 0;
-        list-style: outside none none;
-        margin: 2px 0 0;
-        min-width: 160px;
-        padding: 5px 0;
-        position: absolute;
-        top: 100%;
-        z-index: 1000;*/
     }
 }
 
