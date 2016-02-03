@@ -23,6 +23,12 @@
                     <!--<li class="dropdown" ng-class="{'active': isInPath('catalog/') || isInPath('product') || isInPath('search'), '': isActive('catalog')}">
                        <categorydropdown></categorydropdown>
                     </li>-->
+                    <li ng-class="{'active': isActive(['order', 'favoriteorders'])}">
+                        <a href="order" class="hidden-md hidden-lg">
+                            <i class="fa fa-clipboard"></i>
+                            <span class="hidden-xs">{{'Orders' | r | xlat}}</span>
+                        </a>
+                    </li>
                     <li class="dropdown admin-user visible-md visible-lg" ng-class="{'active': isActive(['order', 'favoriteorders'])}">
                         <a class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-clipboard"></i>
