@@ -5,15 +5,11 @@
 Static file for Theme changes
 Theme name: Verizon Demo
 Version: 2.0
-Last Updated: 1/28/16
+Last Updated: 2/2/16
 Developers: Jen
 */
 
 /*Colors:
-Green #34b948
-Dark Green #00853e
-Lt Gray #
-Dk Gray
 */
 
 .order-cloud .view-form-icon > div:not(.panel-heading) {
@@ -103,7 +99,7 @@ a:focus {
 
 
 /*login*/
-.order-cloud-image { background: url('images/custom/background.jpg') no-repeat top center; }
+.order-cloud-image { background: url('images/custom/background-optimized.jpg') no-repeat top center; }
 
 .order-cloud {
     padding: 0 5px;
