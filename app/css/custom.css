@@ -12,6 +12,35 @@ Developers: Jen
 /*Colors:
 */
 
+body {
+    background-color: #ffffff;
+    margin:0;
+}
+
+@font-face {
+    font-family: NHaasGroteskDSPro-55Rg; /*Neue Haas Grotesk Text 55 Regular*/
+    src: url('fonts/NHaasGroteskDSPro-55Rg.otf');
+}
+
+@font-face {
+    font-family: NHaasGroteskDSPro-75Bd; /*Neue Haas Grotesk Text 55 Bold*/
+    src: url('fonts/NHaasGroteskDSPro-75Bd.otf');
+}
+
+@font-face {
+    font-family: NHaasGroteskTXPro-55Rg; /*Neue Haas Grotesk Text 75 Regular*/
+    src: url('fonts/NHaasGroteskTXPro-55Rg.otf');
+}
+
+@font-face {
+    font-family: NHaasGroteskTXPro-75Bd; /*Neue Haas Grotesk Text 75 Bold*/
+    src: url('fonts/NHaasGroteskTXPro-75Bd.otf');
+}
+
+body {
+    font-family: NHaasGroteskTXPro-55Rg, Lato, sans-serif;
+}
+
 .order-cloud .view-form-icon > div:not(.panel-heading) {
     margin: 15px 0;
 }
@@ -225,7 +254,7 @@ a:focus {
 }
 
 .minicart .btn-primary {
-    font-size:0.85em;
+    font-size:0.7em;
 }
 
 .minicart .minicart-detail .fa-caret-up {
