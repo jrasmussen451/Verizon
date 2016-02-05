@@ -47,15 +47,7 @@
             <ng-view autoscroll />
         </section>
 
-        <br/><br/><br/>
-
-        <footer ng-hide="isActive('cart') || isActive('checkout')">
-            <ng-include src="'partials/footer.html'"></ng-include>
-        </footer>
-
-        <section class="hidden-print">
-            <copyright ng-if="!user.Permissions.contains('UnBrandedSite')" />
-        </section>
+        <fixedfooter ng-hide="isActive('cart') || isActive('checkout')"></fixedfooter>
 
     </section>
 </section>
@@ -97,6 +89,7 @@
 <script src="lib/oc/categoryModal.js" data-group="resources"></script>
 <script src="lib/oc/hamburgerNavigation.js" data-group="resources"></script>
 <script src="lib/oc/categoryDropdown.js" data-group="resources"></script>
+<script src="lib/oc/fixedFooter.js" data-group="resources"></script>
 
 <script src="lib/angular/plugins/compileDirective.js" data-group="resources"></script>
 

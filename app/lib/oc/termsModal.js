@@ -15,7 +15,7 @@ function termsmodal() {
 
     function template() {
         return [
-            '<a ng-click="openTerms(500)">Terms &amp; Conditions</a>'
+            '<a ng-click="openTerms(500)"><i class="fa fa-chevron-right"></i> Terms &amp; Conditions</a>'
         ].join('');
     }
 }
@@ -43,6 +43,7 @@ function TermsModalCtrl($scope, $modal) {
                 '<style>',
                 '.modal-header {background-color:#333;border-bottom: 1px solid #ccc; min-height: 36px; padding: 2px;}',
                 '.modal-header a {margin:0;padding:0;position:absolute;top:8px;right:10px;font-size:1.5em;color:#FFF;}',
+                '.modal-header a.close {margin:0; padding:0; position:absolute; top:8px; right:10px; font-size:1.5em; color:#FFFFFF;}',
                 '.modal-wrapper {width:100%; margin:0 auto; padding:0 20px 20px 20px;}',
                 '.modal-wrapper h3 {margin-bottom:10px;}',
                 '.modal-wrapper li span {text-decoration:underline;}',

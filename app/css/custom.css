@@ -1722,7 +1722,7 @@ ul .inline.minimal .well {
 
 /*pagination*/
 
-/*footer area*/
+/*footer area
 footer section p.lead {
     text-transform: uppercase;
     margin-bottom: 15px;
@@ -1789,7 +1789,54 @@ footer section .link-list ng-include a:before {
     footer section .row > div {
         padding: 30px 15px;
     }
+}*/
+
+fixedfooter {
+    position:relative;
+    bottom:-62px;
+    width:100%;
 }
+
+.fixed-footer-bottom p.lead {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom:0;
+    text-transform: uppercase;
+}
+
+.fixed-footer-bottom .link-list {
+    display: flex;
+    flex-flow: column wrap;
+    max-height: 120px;
+}
+
+.fixed-footer-bottom .link-list a::before {
+    padding-right: 10px;
+    display: inline-block;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.fixed-footer-bottom .link-list a {
+    color: #999999;
+    flex: 1 1 0;
+    padding: 10px 0;
+}
+
+.fixed-footer-bottom .link-list a i  {
+    padding-right:5px;
+}
+
+.fixed-footer-bottom .link-list a:hover,
+.fixed-footer-bottom .link-list a:active,
+.fixed-footer-bottom .link-list a:focus {
+    color: #FFF;
+    text-decoration:none;
+}
+
 .gototop {
     position: fixed;
     bottom: 2px;
