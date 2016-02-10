@@ -45,6 +45,10 @@ body {
     /*margin: 15px 0;*/
 }
 
+.view-form-icon > div:not(.panel-heading) {
+    margin: 15px 0;
+}
+
 /*.contactus, .address-list-view {
     min-height:432px;
 }*/
