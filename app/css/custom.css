@@ -41,17 +41,13 @@ body {
     font-family: NHaasGroteskTXPro-55Rg, Lato, sans-serif;
 }
 
-.order-cloud .view-form-icon > div:not(.panel-heading) {
-    /*margin: 15px 0;*/
-}
-
 .view-form-icon > div:not(.panel-heading) {
-    margin: 15px 0;
+   /* margin: 15px 0;*/
 }
 
-/*.contactus, .address-list-view {
+.address-list-view {
     min-height:432px;
-}*/
+}
 
 .contactus p {
     padding:10px 30px 30px 30px;
