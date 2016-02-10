@@ -42,9 +42,8 @@ body {
 }
 
 .order-cloud .view-form-icon > div:not(.panel-heading) {
-    margin: 15px 0;
+    /*margin: 15px 0;*/
 }
-
 
 /*.contactus, .address-list-view {
     min-height:432px;
@@ -125,7 +124,7 @@ a:focus {
 
 
 /*login*/
-.order-cloud-image { background: url('images/custom/background-optimized.jpg') no-repeat top center; }
+.order-cloud-image { background: url('images/custom/background.jpg') no-repeat top center; }
 
 .order-cloud {
     padding: 0 5px;
@@ -139,6 +138,14 @@ a:focus {
 .order-cloud .form-signin {
     background: rgba(255, 255, 255, 0.8);
     box-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+.order-cloud .logo  {
+    margin-bottom:25px;
+}
+
+.order-cloud .logo img {
+    margin: 0 auto;
 }
 
 .order-cloud .form-signin .btn-default {
@@ -175,6 +182,12 @@ a:focus {
 /*container width*/
 
 /*top header area*/
+.logo {
+    margin-bottom: -15px;
+    position: relative;
+    top: -10px;
+}
+
 .logo a img {
     max-width: 80%!important;
     margin-top: 0;
@@ -1430,9 +1443,11 @@ form[name="addToOrderForm"]  {
     .ng-hidden-xs {
         display: none !important;
     }
-    .primary-dashboard .container .logo a img, .primary-dashboard .container-view .logo a img {
+    .primary-dashboard .container .logo a img,
+    .primary-dashboard .container-view .logo a img {
         margin-top:-15px;
     }
+
     ul .inline.minimal {
         width: 100% !important;
     }
