@@ -71,6 +71,23 @@ body {
     margin:0 auto;
 }
 
+.item-summary hr {
+    min-height:40px;
+    border-bottom:1px solid #ccc;
+    margin:0 auto;
+}
+
+.item-summary .table-responsive {
+    width:100%;
+    margin-top:20px;
+}
+
+.item-summary .table-responsive,
+.item-summary .table-responsive tbody,
+.item-summary .table-responsive td {
+    border:0;
+}
+
 @media(max-width:767px) {
     .breadcrumb {
         margin-bottom: 0;

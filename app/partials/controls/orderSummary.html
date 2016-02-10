@@ -8,10 +8,24 @@
         <loadingindicator ng-show="couponLoadingIndicator" title="{{'Please wait while we verify and apply your promotion code' | r | xlat}}" />
         <loadingindicator ng-show="couponRemoveIndicator" title="{{'Please wait while we remove your promotion code' | r | xlat}}" />
         <orderconfirmationmessage />
-        <p>
-            <span class="text-info">{{'Items' | r | xlat}}</span>
+        <div class="item-summary" ng-init="isCollapsedItems = true">
+            <span><a ng-click="isCollapsedItems = !isCollapsedItems">{{'Items' | r | xlat}}</a></span>
             <span class="pull-right">{{currentOrder.LineItems.length}}</span>
-        </p>
+            <br />
+            <div class="col-collapse" collapse="isCollapsedItems">
+                <hr />
+                <table class="table-responsive">
+                    <tr>
+                        <th class="pull-left">Name</th>
+                        <th class="pull-right text-right">Quantity</th>
+                    </tr>
+                    <tr ng-repeat="item in currentOrder.LineItems">
+                        <td class="pull-left text-info">{{item.Product.Name}}</td>
+                        <td class="pull-right text-right">{{item.Quantity}}</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
         <p ng-if="!(user.Permissions.contains('HidePricing'))">
             <span class="text-info">{{'Subtotal' | r | xlat}}</span>
             <span class="pull-right">{{currentOrder.Subtotal | culturecurrency}}</span>
@@ -30,7 +44,7 @@
                     <div>
                         <label ng-show="currentOrder.CouponCode">{{('Promotion' | r) + ' ' + ('Code' | r) | xlat}}</label>
                         <div class="input-group">
-                            <input class="form-control" type="text" ng-model="currentOrder.CouponCode" placeholder="{{('Promotion' | r) + ' ' + ('Code' | r) | xlat}}" autocomplete="off"/>
+                            <input class="form-control" type="text" ng-model="currentOrder.CouponCode" placeholder="{{('Promotion' | r) + ' ' + ('Code' | r) | xlat}}" autocomplete="off" />
                             <span class="input-group-btn">
                                 <button type="button" class="btn btn-success" ng-click="applyCoupon()"><i class="fa fa-check"></i></button>
                             </span>
@@ -44,7 +58,9 @@
             </p>
             <div ng-show="currentOrder.Coupon">
                 <button type="button"  class="btn btn-danger pull-right" ng-click="removeCoupon()">Remove {{'Coupon' | r | xlat}}</button>
-                <p class="text-left" ng-show="currentOrder.Coupon.ExpirationDate"><small class="text-danger">{{'Expires' | r | xlat}}: {{currentOrder.Coupon.ExpirationDate | date:user.Culture.DateFormat.short}}</small></p>
+                <p class="text-left" ng-show="currentOrder.Coupon.ExpirationDate">
+                    <small class="text-danger">{{'Expires' | r | xlat}}: {{currentOrder.Coupon.ExpirationDate | date:user.Culture.DateFormat.short}}</small>
+                </p>
             </div>
         </div>
         <hr/>
@@ -52,20 +68,21 @@
             <strong>{{'Total' | r | xlat}}</strong>
             <span class="text-success pull-right"><strong>{{currentOrder.Total | culturecurrency}}</strong></span>
         </h4>
-        <p class="text-info text-left" ng-if="user.Company.TaxMethod != 'NoTax' && !user.Permissions.contains('HidePricing')">{{('Shipping' | r) + ', handling and tax may be added to this subtotal.' | xlat}}</p>
+        <p class="text-info text-left" ng-if="user.Company.TaxMethod != 'NoTax' && !user.Permissions.contains('HidePricing')">
+            {{('Shipping' | r) + ', handling and tax may be added to this subtotal.' | xlat}}
+        </p>
     </div>
-    <div class="panel-footer">
-        <div class="view-form-icon" ng-show="user.Permissions.contains('SendOrderNotificationToOthers') && !(cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid)" >
+    <div class="panel-footer" ng-show="user.Permissions.contains('SendOrderNotificationToOthers') && !(cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid)">
+        <div class="view-form-icon">
             <div class="form-group">
                 <label ng-show="currentOrder.ExternalOrderDetailRecipients">{{('Email' | r) + ' ' + ('Notification' | r) | xlat}}</label>
-                <input class="form-control" ng-disabled="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid" type="email" ng-model="currentOrder.ExternalOrderDetailRecipients" placeholder="{{('Email' | r) + ' ' +  ('Address' | r) | xlat}}" autocomplete="off" />
+                <input class="form-control" ng-disabled="cart_shipping.$invalid || cart_order.$invalid || cart_billing.$invalid" type="email"
+                       ng-model="currentOrder.ExternalOrderDetailRecipients" placeholder="{{('Email' | r) + ' ' +  ('Address' | r) | xlat}}" autocomplete="off" />
                 <i class="fa fa-envelope-o"></i>
-                <span class="help-block text-left"><small>{{'Provide an email address if you would like to receive ' + ('Notification' | r) + 's concerning this order.' | r | xlat}}</small></span>
+                <span class="help-block text-left">
+                    <small>{{'Provide an email address if you would like to receive ' + ('Notification' | r) + 's concerning this order.' | r | xlat}}</small>
+                </span>
             </div>
         </div>
-        <!--<button class="btn btn-default" redirect="/security">
-            <span class="fa fa-info-circle"></span> {{'Concerned About Security?' | r | xlat}}
-        </button>
-        <securitymodal></securitymodal>-->
     </div>
 </div>
