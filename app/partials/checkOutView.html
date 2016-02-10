@@ -84,10 +84,10 @@
                 </div>
             </div>
         </div>
+        <orderapprovals ng-show="currentOrder.Approvals" />
         <orderdetails ng-show="hasOrderConfig" />
         <ordershipping />
         <orderbilling />
-        <orderapprovals ng-show="currentOrder.Approvals" />
         <div class="navbar-fixed-bottom">
             <div class="view-response-message alert-success text-center" alert-show="actionMessage">
                 <p>{{actionMessage | r | xlat}}</p>
