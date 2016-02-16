@@ -1249,6 +1249,43 @@ a.list-group-item.active:focus .list-group-item-text {
 
 
 /*productDetailTemplate*/
+
+/*as an alternative to commenting out the code*/
+.product-detail-custom .express-gallery-lightbox {
+    display:none;
+}
+
+.product-detail-custom .panel-default {
+    border-color: #ffffff;
+    box-shadow: none;
+}
+
+.product-detail-custom .panel-footer img {
+    max-width:100%;
+}
+
+.product-detail-custom tabset .tabs {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    padding: 2px;
+}
+
+.product-detail-custom .panel-primary {
+    border-color: #ffffff;
+    box-shadow: none;
+    padding-bottom: 20px;
+}
+
+.product-detail-custom .btn-blue {
+    margin-top: 35px;
+    padding: 15px;
+    width: 100%;
+}
+
+.product-detail-custom .btn-gray {
+    width:100%;
+}
+
 #customProductDescription .tags {
     display: none;
 }
