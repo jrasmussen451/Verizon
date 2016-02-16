@@ -11,10 +11,10 @@
         <pagination page="settings.currentPage" max-size="10" rotate="false" boundary-links="true" total-items="productCount"
                     items-per-page="settings.pageSize" direction-links="true" previous-text="{{'Previous' | xlat}}" next-text="{{'Next' | xlat}}" first-text="{{'First' | xlat}}" last-text="{{'Last' | xlat}}"></pagination>
     </div>
-    <div class="panel-product-list no-panels robyn-product-list" ng-show="currentCategory.InteropID">
+    <div class="panel-product-list no-panels custom-product-list" ng-show="currentCategory.InteropID">
         <nav class="nav">
             <loadingindicator ng-show="searchLoading" title="{{'Please wait while we fetch all products' | r | xlat}}" />
-            <div class="row robyn-toolbar" >
+            <div class="row custom-toolbar" >
                 <div class="col-xs-9 col-md-6" ng-show="currentCategory.SortOptions.length > 0">
                     <div class="form-inline">
                         <label style="display:inline-block; font-weight:normal;">{{'Sort by: ' | r | xlat}}</label>

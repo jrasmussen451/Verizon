@@ -16,7 +16,7 @@
         <br/>
         <!-- 		<div>WHERE PRODUCT LIST WILL GO FOR PROMOTIONAL ITEMS </div> -->
         <div ng-show="products">
-            <div class="panel-product-list no-panels robyn-product-list" ng-show="currentCategory.InteropID">
+            <div class="panel-product-list no-panels custom-product-list" ng-show="currentCategory.InteropID">
                 <nav class="nav">
                     <ul>
                         <li ng-repeat="product in products | filter: {'Grouping': 'Promo' } | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">
@@ -40,7 +40,7 @@
         </div>
         <br/>
         <div ng-show="products">
-            <div class="panel-product-list no-panels robyn-product-list" ng-show="currentCategory.InteropID">
+            <div class="panel-product-list no-panels custom-product-list" ng-show="currentCategory.InteropID">
                 <nav class="nav">
                     <ul>
                         <li ng-repeat="product in products | filter: {'Grouping': 'Collateral' } | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">

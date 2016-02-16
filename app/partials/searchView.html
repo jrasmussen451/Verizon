@@ -35,7 +35,7 @@
                 </button>
             </div>
             <div class="row">
-            <div class=" robyn-toolbar" ng-show="productCount > 0">
+            <div class=" custom-toolbar" ng-show="productCount > 0">
                 <div class="form-inline">
                     <label style="display:inline-block; font-weight:normal;">{{'Sort by: ' | r | xlat}}</label>
                     <select class="form-control" ng-model="sort">
@@ -60,7 +60,7 @@
                         <categorydisplay categoryid="'EX_CommonSearchProducts'"></categorydisplay>
                     </div>
                 </aside>
-                <div class="col-md-9 robyn-product-list">
+                <div class="col-md-9 custom-product-list">
                     <nav class="nav" >
                         <!--<ul ng-repeat="product in products | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">-->
                             <!--<li class="inline inline-search minimal" >-->
