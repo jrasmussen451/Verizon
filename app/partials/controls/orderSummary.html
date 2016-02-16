@@ -9,7 +9,18 @@
         <loadingindicator ng-show="couponRemoveIndicator" title="{{'Please wait while we remove your promotion code' | r | xlat}}" />
         <orderconfirmationmessage />
         <div class="item-summary" ng-init="isCollapsedItems = true">
-            <span><a ng-click="isCollapsedItems = !isCollapsedItems">{{'Items' | r | xlat}}</a></span>
+            <span>
+                <a ng-click="isCollapsedItems = !isCollapsedItems">
+
+                    <!--<i class="fa fa-plus" ng-show="isCollapsedItems"></i>
+                    <i class="fa fa-minus" ng-show="!isCollapsedItems"></i>
+                    {{'Items' | r | xlat}}-->
+
+                    {{'Items' | r | xlat}}&nbsp;
+                    <i class="fa fa-caret-down" ng-show="isCollapsedItems"></i>
+                    <i class="fa fa-caret-up" ng-show="!isCollapsedItems"></i>
+                </a>
+            </span>
             <span class="pull-right">{{currentOrder.LineItems.length}}</span>
             <br />
             <div class="col-collapse" collapse="isCollapsedItems">
