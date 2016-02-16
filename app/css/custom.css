@@ -1225,6 +1225,29 @@ a.list-group-item.active:focus .list-group-item-text {
     padding-bottom: 9px;
 }
 
+/*Product List Add To Cart*/
+.add-to-cart .view-form-icon .quantity div input {
+    color: #0066cc;
+}
+
+.add-to-cart .view-form-icon .btn {
+    height: 52px;
+}
+
+.add-to-cart .view-form-icon .btn i {
+    left:0;
+}
+
+.add-to-cart .view-form-icon .btn i.disabled {
+    color:#AAA;
+}
+
+.add-to-cart .view-form-icon .btn i.enabled {
+    color:#0066cc;
+}
+/*Product List Add To Cart*/
+
+
 /*productDetailTemplate*/
 #customProductDescription .tags {
     display: none;
