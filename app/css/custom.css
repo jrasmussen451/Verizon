@@ -5,7 +5,7 @@
 Static file for Theme changes
 Theme name: Verizon Demo
 Version: 2.0
-Last Updated: 2/2/16
+Last Updated: 2/16/16
 Developers: Jen
 */
 
@@ -141,7 +141,16 @@ a:focus {
 
 
 /*login*/
-.order-cloud-image { background: url('images/custom/background.jpg') no-repeat top center; }
+/*.order-cloud-image { background: url('images/custom/background.jpg') no-repeat top center; }*/
+
+.order-cloud-image {
+    background:url('images/custom/background.jpg') center center no-repeat fixed;
+    background-size:cover;
+    /* use this with a background-color is an option
+    background-size: 100%;
+    background-position: 50% 50%;
+    */
+}
 
 .order-cloud {
     padding: 0 5px;
