@@ -1688,6 +1688,21 @@ ul .inline.minimal .well {
 }
 /*contact us (help)*/
 
+/*cart*/
+.cart-view .btn-date {
+    margin:0;
+    height:40px;
+    padding-top:8px;
+}
+
+.cart-view select.cost-center {
+    padding-left: 25px;
+}
+
+.cart-view .navbar-fixed-bottom .alert-warning.text-center {
+    padding: 10px;
+}
+/*cart*/
 
 /*checkout summary*/
 .item-summary hr {
