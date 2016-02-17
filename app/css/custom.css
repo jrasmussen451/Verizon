@@ -97,6 +97,13 @@ a:focus {
 }
 /*login*/
 
+
+/*admin*/
+.user-view .view-inline-error {
+    text-align: left;
+}
+/*admin*/
+
 /*set the min height on potentially short views*/
 .address-list-view,
 .product-detail-custom {
