@@ -686,6 +686,13 @@ a:focus {
     border-radius: 0;
 }
 
+.btn-date {
+    margin:0;
+    height:40px;
+    padding-top:8px;
+}
+
+
 .btn-primary .badge {
     color: #A80309;
     background-color: #ffffff;
@@ -1689,12 +1696,6 @@ ul .inline.minimal .well {
 /*contact us (help)*/
 
 /*cart*/
-.cart-view .btn-date {
-    margin:0;
-    height:40px;
-    padding-top:8px;
-}
-
 .cart-view select.cost-center {
     padding-left: 25px;
 }
