@@ -1704,6 +1704,13 @@ ul .inline.minimal .well {
 }
 /*cart*/
 
+/*checkout*/
+.radio input {
+    min-height:0;
+}
+
+/*checkout*/
+
 /*checkout summary*/
 .item-summary hr {
     min-height:40px;
@@ -1726,7 +1733,7 @@ ul .inline.minimal .well {
 /*pagination*/
 .pagination > li > a,
 .pagination > li > span {
-    color: #005288;
+    color: #0066cc;
 }
 
 .pagination > li > a:hover,

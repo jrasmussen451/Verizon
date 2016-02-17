@@ -46,27 +46,33 @@
                             <p class="text-muted">
                                 <small>By creating an account you will be able to shop faster, be up to date on an order's status, and keep track of the orders you have previously made.</small>
                             </p>
-                            <form name="new_customer" ng-submit="newCustomerContinue(checkoutChoice)">
+                            <!-- TODO: what is this function?! -->
+                            <form name="new_customer" class="new-customer" ng-submit="newCustomerContinue(checkoutChoice)">
                                 <div class="radio">
                                     <label>
-                                        <input style="min-height: 0" type="radio" ng-model="checkoutChoice" value="register">
+                                        <input type="radio" ng-model="checkoutChoice" value="register">
                                         Register Account
                                     </label>
                                 </div>
                                 <div class="radio">
                                     <label>
-                                        <input style="min-height: 0" type="radio" ng-model="checkoutChoice" value="guestcheckout">
+                                        <input type="radio" ng-model="checkoutChoice" value="guestcheckout">
                                         Guest Checkout
                                     </label>
                                 </div>
                                 <div ng-show="checkoutChoice == 'guestcheckout'">
                                     <label>{{'Guest Checkout Email' | r | xlat}}</label>
-                                    <input class="form-control" type="email" ng-model="user.TempEmail" ng-required="checkoutChoice == 'guestcheckout'" placeholder="{{'Email Address' | r | xlat}}" ng-pattern="/^(([^<>()[\]\\.,;:\s@\']+(\.[^<>()[\]\\.,;:\s@\']+)*)|(\'.+\'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/" /><br/>
+                                    <input class="form-control" type="email" ng-model="user.TempEmail" ng-required="checkoutChoice == 'guestcheckout'"
+                                           placeholder="{{'Email Address' | r | xlat}}"
+                                           ng-pattern="/^(([^<>()[\]\\.,;:\s@\']+(\.[^<>()[\]\\.,;:\s@\']+)*)|(\'.+\'))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/" />
+                                    <br/>
                                 </div>
-                                <input class="btn btn-default" type="submit" ng-disabled="new_customer.$invalid || !checkoutChoice" id="451_btn_login_existing" value="{{'Continue' | r | xlat}}" />
+                                <input class="btn btn-default" type="submit" ng-disabled="new_customer.$invalid || !checkoutChoice" value="{{'Continue' | r | xlat}}" />
                             </form>
+                            <!-- TODO: what is this function?! -->
                         </div>
                     </div>
+                    <!-- TODO: what is this function?! -->
                     <div ng-show="!showCreateNewUser" class="col-sm-6">
                         <!--Existing User Login Form-->
                         <div class="well aom-bordered-well" ng-controller="UserEditCtrl">
@@ -81,6 +87,7 @@
                             </form>
                         </div>
                     </div>
+                    <!-- TODO: what is this function?! -->
                 </div>
             </div>
         </div>
@@ -98,7 +105,8 @@
             <div class="view-response-message alert-danger text-center" alert-show="couponError">
                 <p>{{couponError | r | xlat}}</p>
             </div>
-            <div class="view-error-message" ng-show="(cart_order.$error.required.length + cart_billing.$error.required.length + cart_shipping.$error.required.length + cart_billing.$error.paymentMethod.length) > 0">
+            <div class="view-error-message"
+                 ng-show="(cart_order.$error.required.length + cart_billing.$error.required.length + cart_shipping.$error.required.length + cart_billing.$error.paymentMethod.length) > 0">
                 <ul class="alert-warning">
                     <li class="text-center">
                         <span class="badge">
