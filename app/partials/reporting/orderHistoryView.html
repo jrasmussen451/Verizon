@@ -1,4 +1,4 @@
-<section>
+<section class="order-history">
     <loadingindicator ng-show="loadingIndicator" title="{{'Please wait while we fetch your order' | r | xlat}}"></loadingindicator>
     <div class="hidden-print">
         <div>
@@ -7,7 +7,9 @@
         <nav class="nav ">
             <ul>
                 <li class="pull-right" ng-click="onPrint()"><span><i class="fa fa-print text-primary" rel="tooltip" title="{{'Print' | r | xlat}}"></i></span></li>
-                <li class="pull-right"><span class="text-primary">{{(order.Type) + ' ' + ('Order' | r) | xlat}}<span ng-show="order.ExternalID"> {{'ID' | r}}: </span>{{order.ExternalID}}</span></li>
+                <li class="pull-right"><span class="text-primary">
+                    {{(order.Type) + ' ' + ('Order' | r) | xlat}} <span ng-show="order.ExternalID"> {{'ID' | r}}: </span>{{order.ExternalID}}</span>
+                </li>
             </ul>
         </nav>
         <div class="col-md-3 col-md-offset-1 col-md-push-8">
@@ -32,13 +34,15 @@
             </div>
         </div>
         <div class="col-md-8 col-md-pull-4">
-            <div class="text-center text-primary" style="font-family: 'Open Sans', sans-serif;
-  font-style:italic;" ng-if="order.Status != 'Unsubmitted'"><h1><strong>Thank you for your order.</strong></h1></div>
+            <div class="text-center text-primary" ng-if="order.Status != 'Unsubmitted'">
+                <h1>Thank you for your order.</h1>
+            </div>
 
             <div class="panel panel-default">
                 <div class="panel-heading">
                     <h3 class="panel-title panel-primary">
-                        {{order.LineItems.length}} {{'Item' + (order.LineItems.length > 1 ? 's' : '') | rl | xlat}} {{'in this' | rl | xlat:(currentOrder.LineItems.length)}} {{'Order' | rl | xlat}}
+                        {{order.LineItems.length}} {{'Item' + (order.LineItems.length > 1 ? 's' : '') | rl | xlat}}
+                        {{'in this' | rl | xlat:(currentOrder.LineItems.length)}} {{'Order' | rl | xlat}}
                     </h3>
                 </div>
                 <lineitemhistorygrid />

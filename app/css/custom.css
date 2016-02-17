@@ -98,8 +98,9 @@ a:focus {
 /*login*/
 
 /*set the min height on potentially short views*/
-.address-list-view {
-    min-height:432px;
+.address-list-view,
+.product-detail-custom {
+    min-height:460px;
 }
 
 /*container width*/
@@ -1535,8 +1536,6 @@ form[name="addToOrderForm"]  {
     margin-top: -50px;
 }
 
-
-
 .product-list-qualities-grid {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -1709,9 +1708,6 @@ ul .inline.minimal .well {
 }
 /*checkout summary*/
 
-
-
-
 /*pagination*/
 .pagination > li > a,
 .pagination > li > span {
@@ -1733,6 +1729,13 @@ ul .inline.minimal .well {
 .pagination > .active > span:focus {
     background-color: #005288;
     border-color: #005288;
+}
+/*pagination*/
+
+/*orders*/
+.order-history h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
 }
 
 fixedfooter {
