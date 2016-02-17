@@ -1364,6 +1364,10 @@ a.list-group-item.active:focus .list-group-item-text {
 
 
 /****/
+.custom-product-list.related-products {
+    margin-top:20px;
+}
+
 .no-panels.custom-product-list ul,
 .custom-product-list ul {
     margin-left: -10px;
