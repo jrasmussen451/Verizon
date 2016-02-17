@@ -14,10 +14,10 @@
     <div class="panel-product-list no-panels custom-product-list" ng-show="currentCategory.InteropID">
         <nav class="nav">
             <loadingindicator ng-show="searchLoading" title="{{'Please wait while we fetch all products' | r | xlat}}" />
-            <div class="row custom-toolbar" >
+            <div class="row custom-toolbar">
                 <div class="col-xs-9 col-md-6" ng-show="currentCategory.SortOptions.length > 0">
                     <div class="form-inline">
-                        <label style="display:inline-block; font-weight:normal;">{{'Sort by: ' | r | xlat}}</label>
+                        <label>{{'Sort by: ' | r | xlat}}</label>
                         <select class="form-control" ng-options="option.SortValue as (option.Display | xlat) for option in currentCategory.SortOptions" ng-model="sort"><option value=""></option></select>
                     </div>
                 </div>

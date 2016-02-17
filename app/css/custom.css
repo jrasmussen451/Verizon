@@ -692,7 +692,6 @@ a:focus {
     padding-top:8px;
 }
 
-
 .btn-primary .badge {
     color: #A80309;
     background-color: #ffffff;
@@ -1420,6 +1419,11 @@ a.list-group-item.active:focus .list-group-item-text {
     border: 1px solid #f2f2f2;
     padding: 5px;
     margin: 5px 5px 15px;
+}
+
+.custom-toolbar label {
+    display:inline-block;
+    font-weight:normal;
 }
 
 @media (min-width: 992px) {
