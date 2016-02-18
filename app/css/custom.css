@@ -1687,22 +1687,32 @@ ul .inline.minimal .well {
 
 
 /*contact us (help)*/
-.contactus p {
-    padding:10px 30px 30px 30px;
-    margin:0 auto;
+.contact-us ul {
+    margin-left:30px;
 }
 
-.contactus h3 {
+.contact-us li {
+    margin-left:30px;
+    list-style-type: square;
+}
+
+.contact-us p {
+    padding:10px 30px 10px 30px;
+    margin:0 auto;
+
+}
+
+.contact-us h3 {
     padding:40px 30px 10px 30px;
     margin:0 auto;
 }
 
-.contactus img {
+.contact-us img {
     margin:0 auto;
     border:1px solid #ccc;
 }
 
-.contactus hr {
+.contact-us hr {
     min-height:40px;
     border-bottom:1px solid #ccc;
     max-width:95%;
