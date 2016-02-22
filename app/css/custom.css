@@ -107,6 +107,7 @@ a:focus {
 /*set the min height on potentially short views*/
 .address-list-view,
 .favorite-orders-view,
+.product-detail-default,
 .product-detail-custom {
     min-height:460px;
 }
@@ -1272,37 +1273,50 @@ a.list-group-item.active:focus .list-group-item-text {
 /*productDetailTemplate*/
 
 /*as an alternative to commenting out the code*/
+.product-detail-default .express-gallery-lightbox,
 .product-detail-custom .express-gallery-lightbox {
     display:none;
 }
 
+.product-detail-default .panel-default,
 .product-detail-custom .panel-default {
     border-color: #ffffff;
     box-shadow: none;
 }
 
+.product-detail-default .panel-footer img,
 .product-detail-custom .panel-footer img {
     max-width:100%;
 }
 
+.product-detail-default tabset .tabs,
 .product-detail-custom tabset .tabs {
     display: inline-flex;
     display: -webkit-inline-flex;
     padding: 2px;
 }
 
+.product-detail-default .tab-pane ul li,
+.product-detail-custom .tab-pane ul li {
+    list-style-type: disc;
+    margin-left:15px;
+}
+
+.product-detail-default .panel-primary,
 .product-detail-custom .panel-primary {
     border-color: #ffffff;
     box-shadow: none;
     padding-bottom: 20px;
 }
 
+.product-detail-default .btn-blue,
 .product-detail-custom .btn-blue {
     margin-top: 35px;
     padding: 15px;
     width: 100%;
 }
 
+.product-detail-default .btn-gray,
 .product-detail-custom .btn-gray {
     width:100%;
 }
@@ -1639,7 +1653,8 @@ ul .inline.minimal .well {
     padding: 5px;
 }
 
-.product-detail-default .view-response-message.alert-info.text-center {
+.product-detail-default .view-response-message.alert-info.text-center,
+.product-detail-custom .view-response-message.alert-info.text-center {
     margin-top: 35px;
 }
 
