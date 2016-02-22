@@ -1510,6 +1510,11 @@ a.list-group-item.active:focus .list-group-item-text {
     margin-bottom: 10px;
     border-bottom: 4px double #f2f2f2;
 }
+
+.panel-search .category-display-box > h4 {
+    padding:0 0 0 20px;
+}
+
 .category-display-box .lead {
     margin-bottom: 5px;
     font-size: 13px;
