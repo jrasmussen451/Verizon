@@ -89,13 +89,10 @@ function orderbuttons() {
             '<style>',
             'orderbuttons {width:100%; margin:0 auto;}',
             '.navbar-fixed-bottom {position:relative;}',
-            'orderbuttons li {width:25%;float:left; padding-right:10px; }',
-            'orderbuttons .btn {border-radius:0; width:100%; margin:0 5px;}',
-            'orderbuttons btn:nth-of-type(4) {margin-right:0; }',
-            '@media (max-width:767px) { orderbuttons li {width:100%;} }',
-            '@media (max-width:767px) { orderbuttons .btn {border-radius:0;width:100%; margin:5px 0;} }',
+            'orderbuttons .btn {border-radius:0; width:100%; padding:0; }',
+            '@media (max-width:767px) { orderbuttons .btn {margin:5px 0;} }',
             '</style>',
-            '<ul ng-include="view"></ul>'
+            '<div ng-include="view"></div>'
         ].join('');
     }
 }
