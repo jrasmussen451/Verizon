@@ -106,6 +106,7 @@ a:focus {
 
 /*set the min height on potentially short views*/
 .address-list-view,
+.favorite-orders-view,
 .product-detail-custom {
     min-height:460px;
 }

@@ -1,4 +1,4 @@
-<section>
+<section class="favorite-orders-view">
     <loadingindicator ng-show="loading" />
     <accountnavigation />
     <div class="panel panel-default" ng-if="favoriteorders.length == 0">
@@ -35,7 +35,7 @@
                         <th>{{'Order' | r}} {{'ID' | r}}</th>
                         <th>{{'Date' | r}} {{'Completed' | r}}</th>
                         <th>{{'Order' | r}} {{'Type' | r}}</th>
-                        <th ng-if="!(user.Permissions.contains('HidePricing'))"></th>
+                        <th></th>
                     </tr>
                     <tr ng-repeat="order in favoriteorders | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize">
                         <td><input type='checkbox' ng-model="order.Selected" /></td>
@@ -43,7 +43,7 @@
                         <td><a ng-href="order/{{order.ID}}">{{order.ExternalID}}</a></td>
                         <td>{{order.DateCompleted | date:'medium'}}</td>
                         <td> {{order.Type}}</td>
-                        <td class="text-center" ng-if="!(user.Permissions.contains('HidePricing'))">
+                        <td class="text-center">
                             <button ng-disabled="currentOrder" type="button" class="btn btn-default btn-sm" ng-click="repeat(order)">
                                 <i ng-show="currentOrder" class="fa fa-warning"></i>
                                 {{'Repeat' | r}} {{'Order' | r}}
