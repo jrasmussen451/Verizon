@@ -332,7 +332,7 @@ function imagelightboxtemplate () {
         '</div>',
         '<div class="lightbox-image-container">',
         '<div class="lightbox-image-caption"><span>{{Lightbox.imageCaption}}</span></div>',
-        '<img lightbox-src="{{Lightbox.imageUrl}}" alt="" imageonload>',
+        '<img class="img-responsive" lightbox-src="{{Lightbox.imageUrl}}" alt="" imageonload>',
         '</div>',
         '</div>',
         '</div>'
