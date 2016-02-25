@@ -18,7 +18,7 @@ function fixedfooter() {
         return [
             '<style>',
             'body {margin-bottom:0;}',
-            '.fixed-footer-bottom div {color: #FFF; margin:15px 0 0 0;}',
+            '.fixed-footer-bottom div {color: #FFF; margin:15px 0 10px 0;}',
             '.fixed-footer-bottom div.col-md-6 {margin-left: auto; margin-right: auto;}',
             '.fixed-footer-bottom div.col-md-6.pull-left {padding-right: 15px;}',
             '.fixed-footer-bottom div.col-md-6.pull-right {padding-left: 15px;}',
