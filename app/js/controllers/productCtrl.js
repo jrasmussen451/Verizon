@@ -19,32 +19,6 @@ function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplay
 		})
 	});
 
-    $scope.showLightbox = false;
-    $scope.defaultIndex = 0;
-    $scope.toggleLightbox = function(value){
-        if (value) {
-            $scope.showLightbox = value;
-        } else {
-            $scope.showLightbox = !$scope.showLightbox;
-        }
-    };
-    $scope.changeDefaultIndex = function(value){
-        if (value == 'next'){
-            if ($scope.defaultIndex == ($scope.GalleryLightboxImages.Images.length - 1)){
-                $scope.defaultIndex = 0;
-            } else {
-                $scope.defaultIndex++;
-            }
-        }
-        if (value == 'prev'){
-            if ($scope.defaultIndex == 0){
-                $scope.defaultIndex = ($scope.GalleryLightboxImages.Images.length - 1);
-            } else {
-                $scope.defaultIndex--;
-            }
-        }
-    };
-
 	$scope.calcVariantLineItems = function(i){
 		$scope.variantLineItemsOrderTotal = 0;
 		angular.forEach($scope.variantLineItems, function(item){
@@ -76,6 +50,7 @@ function ($scope, $routeParams, $route, $location, $451, Product, ProductDisplay
 				callback();
 		}, $scope.settings.currentPage, $scope.settings.pageSize, searchTerm);
 	}
+
 	$scope.$watch('settings.currentPage', function(n, o) {
 		if (n != o || (n == 1 && o == 1))
 			init($scope.searchTerm);

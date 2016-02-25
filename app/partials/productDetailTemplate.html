@@ -3,40 +3,22 @@
     <!-- BREADCRUMB!-->
     <productnav product="LineItem.Product" variant="LineItem.Variant" />
 
-    <!-- PRODUCT IMAGE PANEL FOR PRODUCTS WITH EXPRESS-GALLERY!-->
-
-    <!--this is apparently commented out to avoid the lightbox flash when you first go to a product?-->
-    <div class="express-gallery-lightbox" ng-show="showLightbox">
-         <figure class="row">
-             <div class="col-md-6 col-md-offset-3">
-                 <div class="well">
-                     <div class="btn btn-default" ng-click="changeDefaultIndex('prev')">Prev</div>
-                     <div class="btn btn-default" ng-click="changeDefaultIndex('next')">Next</div>
-                     <i class="fa fa-times fa-2x pull-right" ng-click="toggleLightbox(false)"></i>
-                     <img ng-src="{{GalleryLightboxImages.Images[defaultIndex].FileURL}}"/>
-                 </div>
-             </div>
-         </figure>
-     </div>
     <!-- PRODUCT IMAGE PANEL!-->
 
     <div class="col-md-4 col-collapse">
-        <div class="panel panel-default" ng-class="{'express-gallery-panel':LineItem.Product.StaticSpecGroups.images}">
+        <div class="panel panel-default">
             <div class="panel-body">
                 <loadingindicator ng-show="loadingImage && LineItem.Variant.IsMpowerVariant && LineItem.Variant.PreviewUrl" />
                 <figure>
-                    <img ng-if="!GalleryLightboxImages && !StaticSpecGroups.ProductZoom && LineItem.Variant.LargeImageUrl"
+
+                    <img ng-if="!StaticSpecGroups.ProductZoom && LineItem.Variant.LargeImageUrl"
                          class="product-image-large img-responsive"
                          ng-src="{{LineItem.Variant.PreviewUrl || LineItem.Variant.LargeImageUrl}}" imageonload />
 
                     <!--lightbox-->
-                    <div class="panel panel-no-panels" ng-if="!GalleryLightboxImages && !StaticSpecGroups.ProductZoom">
+                    <div class="panel panel-no-panels" ng-if="!StaticSpecGroups.ProductZoom">
                         <productlightbox></productlightbox>
                     </div>
-
-                    <!--express gallery-->
-                    <img ng-click="toggleLightbox(true)" ng-if="StaticSpecGroups.images && !LineItem.Variant"
-                    class="product-image-large img-responsive gallery-display" ng-src="{{GalleryLightboxImages.Images[defaultIndex].FileURL}}" imageonload />
 
                     <!--product zoom-->
                     <productzoom lineitem="LineItem" ng-if="StaticSpecGroups.ProductZoom"></productzoom>
