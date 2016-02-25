@@ -71,30 +71,6 @@ four51.app.directive('categorylistview', function() {
     return obj;
 });
 
-four51.app.directive('tabbedcategorylistview', function() {
-    var obj = {
-        restrict: "E",
-        templateUrl:'partials/CategoryListViews/tabbedCategoryView.html'
-    };
-
-    return obj;
-});
-four51.app.directive('tabbedcategorylistviewtwo', function() {
-    var obj = {
-        restrict: "E",
-        templateUrl:'partials/CategoryListViews/tabbedCategoryViewTwo.html'
-    };
-
-    return obj;
-});
-four51.app.directive('tabbedcategorylistviewthree', function() {
-    var obj = {
-        restrict: "E",
-        templateUrl:'partials/CategoryListViews/tabbedCategoryViewThree.html'
-    };
-
-    return obj;
-});
 four51.app.directive('broadcastview', function() {
     var obj = {
         restrict: "E",
