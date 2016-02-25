@@ -1,5 +1,5 @@
-<div ng-if="products" class="row">
-    <button class="btn btn-primary pull-right" ng-click="addListToOrder()" ng-disabled="list.length < 1 || displayLoadingIndicator" style="margin-right: 5px;">
+<div ng-if="products" class="row product-list-inline">
+    <button class="btn btn-primary pull-right" ng-click="addListToOrder()" ng-disabled="list.length < 1 || displayLoadingIndicator">
         <loadingindicator  ng-show="displayLoadingIndicator"></loadingindicator>
         <i ng-hide="lineItemErrors.length > 0" class="fa fa-shopping-cart"></i>
         <i ng-show="lineItemErrors.length > 0" class="fa fa-warning"></i>
@@ -16,7 +16,7 @@
         <div class="row custom-toolbar" >
             <div class="col-xs-9 col-md-6" ng-show="currentCategory.SortOptions.length > 0">
                 <div class="form-inline">
-                    <label style="display:inline-block; font-weight:normal;">{{'Sort by: ' | r | xlat}}</label>
+                    <label>{{'Sort by: ' | r | xlat}}</label>
                     <select class="form-control" ng-options="option.SortValue as (option.Display | xlat) for option in currentCategory.SortOptions" ng-model="sort">
                         <option value=""></option>
                     </select>

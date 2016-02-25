@@ -2,8 +2,7 @@
     <div class="col-md-4">
         <label>{{('Start' | r) + ' ' + ('Date' | r) | xlat}}</label>
         <div class="btn btn-default btn-block btn-date hidden-lg hidden-md"
-             ng-click="$event.preventDefault();$event.stopPropagation();startopened = !startopened;"
-             style="margin:0; height:40px; padding-top:8px;">
+             ng-click="$event.preventDefault();$event.stopPropagation();startopened = !startopened;">
             {{fromdate ? "" : "Tap"}}
             <span class="text-info">{{fromdate | date:$parent.user.Culture.DateFormat.short}}</span>
         </div>
@@ -19,8 +18,7 @@
     <div class="col-md-4">
         <label>{{('End' | r) + ' ' + ('Date' | r) | xlat}}</label>
         <div class="btn btn-default btn-block btn-date hidden-lg hidden-md"
-             ng-click="$event.preventDefault();$event.stopPropagation();endopened = !startopened;"
-             style="margin:0; height:40px; padding-top:8px;">
+             ng-click="$event.preventDefault();$event.stopPropagation();endopened = !startopened;">
             {{todate ? "" : "Tap"}}
             <span class="text-info">{{todate | date:$parent.user.Culture.DateFormat.short}}</span>
         </div>

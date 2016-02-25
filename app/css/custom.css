@@ -47,6 +47,10 @@ a:focus {
     color: #00478e;
 }
 
+.clear {
+    clear:both;
+}
+
 /*login*/
 .order-cloud-image {
     background:url('images/custom/background.jpg') center center no-repeat fixed;
@@ -1271,6 +1275,13 @@ a.list-group-item.active:focus .list-group-item-text {
 
 .add-to-cart .view-form-icon .btn {
     height: 52px;
+    margin-top: 12px;
+}
+
+@media(max-width:767px) {
+    .add-to-cart .view-form-icon .btn {
+        margin-top: 0;
+    }
 }
 
 .add-to-cart .view-form-icon .btn i {
@@ -1578,6 +1589,18 @@ a.list-group-item.active:focus .list-group-item-text {
 }
 /*moving from bootstrap mixins */
 
+.custom-short-product a.pull-right {
+    font-size:11px;
+    font-weight:bold;
+    background-color:#ccc;
+    color:#ffffff;
+    padding:2px;
+}
+
+.custom-short-product img {
+    max-height:150px;
+}
+
 .panel-category-list ul li a .empty {
     min-height: 150px;
 }
@@ -1604,6 +1627,15 @@ a.list-group-item.active:focus .list-group-item-text {
 form[name="addToOrderForm"]  {
     font-size: 80%;
     margin-top: -50px;
+}
+
+.product-list-inline .btn.btn-primary {
+    margin-right: 5px;
+}
+
+.product-list-inline label {
+    display:inline-block;
+    font-weight:normal;
 }
 
 .product-list-qualities-grid {

@@ -1,7 +1,7 @@
 <div class="451qa_prod_item custom-short-product inline">
     <a href="product/{{LineItem.Product.InteropID}}">
         <figure ng-show="LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl" >
-            <img style="max-height:150px;" ng-src="{{LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl}}"/>
+            <img class="img=responsive" ng-src="{{LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl}}"/>
         </figure>
         <div class="empty" ng-hide="LineItem.Variant.LargeImageUrl || LineItem.Product.LargeImageUrl">
             <span class="fa empty"><i class="fa fa-camera"></i></span>
@@ -21,7 +21,7 @@
             </div>
         </div>
     </div>
-    <div class="view-form-icon" style="margin-bottom: -15px;" ng-show="!allowAddToOrderInProductList || StaticSpecGroups.Qualities.Specs.DownloadOnly">
+    <div class="view-form-icon" ng-show="!allowAddToOrderInProductList || StaticSpecGroups.Qualities.Specs.DownloadOnly">
         <div class="row view-product">
             <a class="btn btn-default btn-block" href="product/{{LineItem.Product.InteropID}}">{{('View' | r) + ' ' + ('Details' | r) | xlat}}</a>
         </div>
