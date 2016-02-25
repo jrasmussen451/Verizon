@@ -25,7 +25,7 @@ function ($window, $scope, $route, $location, $451, User, Order, Security, Order
 	$scope.$watch('user.CustomFields', function(newVal){
 		if(!newVal) return;
 		angular.forEach($scope.user.CustomFields, function (field) {
-			if (field.Name === 'ExpressPageViews') {
+			if (field.Name === 'PageViews') {
 				pageViews = field;
 				if (pageViews.Value === null) {
 					pageViews.Value = 0;
@@ -37,7 +37,7 @@ function ($window, $scope, $route, $location, $451, User, Order, Security, Order
 					pageViews.Value = parseInt(pageViews.Value);
 				}
 			}
-			if (field.Name === 'MaxExpressPageViews') {
+			if (field.Name === 'MaxPageViews') {
 				maxPageViews = field;
 				maxPageViews.Value = parseInt(field.DefaultValue);
 			}
@@ -119,30 +119,10 @@ function ($window, $scope, $route, $location, $451, User, Order, Security, Order
     $scope.$on('event:auth-loginConfirmed', function(){
         $route.reload();
 	});
+
 	$scope.$on("$routeChangeSuccess", init);
     $scope.$on('event:auth-loginRequired', cleanup);
 
-    $scope.goToTop = function() {
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    };
-
-    $scope.validateEmail = function(email) {
-        var regex = /^([a-zA-Z0-9_.+-])+\@((expresspros)+\.)+(com)+$/;
-        return regex.test(email);
-    };
-
-
-
-    $scope.showScrollUp = false;
-    angular.element($window).bind("scroll", function(e) {
-        if (e.view && e.view.scrollY > 250) {
-            $scope.showScrollUp = true;
-        } else {
-            $scope.showScrollUp = false;
-        }
-        $scope.$apply();
-    });
 
 
 }]);

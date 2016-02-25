@@ -21,10 +21,10 @@ function minicartController($scope, $location, Order, OrderConfig, User, BonusIt
     var maxPageViews = 0;
     $scope.preCartRedirect = function(){
         angular.forEach($scope.user.CustomFields, function (field) {
-            if (field.Name === 'ExpressPageViews') {
+            if (field.Name === 'PageViews') {
                 pageViews = parseInt(field.Value);
             }
-            if (field.Name === 'MaxExpressPageViews') {
+            if (field.Name === 'MaxPageViews') {
                 maxPageViews = parseInt(field.DefaultValue);
             }
         });

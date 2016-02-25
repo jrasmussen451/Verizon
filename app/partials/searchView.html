@@ -1,6 +1,5 @@
 <loadingindicator ng-show="searchLoading" title="{{'Please wait while we fetch all products' | r}}" />
 <section>
-
     <div class="panel panel-search">
         <div class="panel-heading">
             <h3 class="panel-title">
@@ -62,12 +61,7 @@
                 </aside>
                 <div class="col-md-9 custom-product-list">
                     <nav class="nav" >
-                        <!--<ul ng-repeat="product in products | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">-->
-                            <!--<li class="inline inline-search minimal" >-->
-                                <!--<shortproductviewminimal list="list" p="product" user="user" />-->
-                            <!--</li>-->
-                        <!--</ul>-->
-                        <ul class="product-list-view-express">
+                        <ul class="product-list-view">
                             <li class="inline inline-search minimal" ng-repeat="product in products | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize | orderBy:sorter:direction">
                                 <div class="well">
                                     <shortproductviewminimal list="list" p="product" user="user" />
