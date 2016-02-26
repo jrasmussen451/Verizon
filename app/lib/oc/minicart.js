@@ -54,7 +54,7 @@ function minicart() {
             '</div>',
             '</div>',
             '</li>',
-            '<li ng-show="freeProductInfo.Item" class="aom-free-item-mini">',
+            '<li ng-show="freeProductInfo.Item" class="free-item-mini">',
             '<div class="row">',
             '<div class="col-xs-3">',
             '<figure>',
