@@ -78,7 +78,6 @@ Four51: Jen
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Category Modal (dev branch)
-- 
 
 ======== 
 `lib/oc/fixedFooter.js` 
