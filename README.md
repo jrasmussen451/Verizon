@@ -11,9 +11,13 @@ Four51: Jen
 ##### Github URL
 * github.com/Four51Repositories/Verizon
 
+======== 
+
 ##### Product Detail Template 
 `partials/productDetailTemplate.html` 
 * Default PDT in repo
+
+======== 
 
 ##### Images
 `css/images/custom/` 
@@ -26,6 +30,8 @@ Four51: Jen
 * css/images/help/step5.jpg
 * css/images/products/TABRDN16X271015-installation.jpg
 
+======== 
+
 ##### Fonts
 `css/fonts` 
 * NHaasGroteskDSPro-55Rg.otf
@@ -33,116 +39,124 @@ Four51: Jen
 * NHaasGroteskTXPro-55Rg.otf
 * NHaasGroteskTXPro-75Bd.otf
 
+======== 
+
 ##### Miscellaneous
 
-
+======== 
 ##### OrderCloud modules
+
 `lib/oc/addToCartPreview.js` 
 * Add to Cart Preview 
 
+======== 
 `lib/oc/backToTop.js` 
 * Back To Top Arrow
 
+======== 
 `lib/oc/bowser.js` 
 * Browser Service
 
+======== 
 `lib/oc/carousel.js` 
 * Bootstrap Carousel
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Bootstrap Carousel
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Bootstrap%20Carousel
 
 * Specific naming convention
 - VerizonCarouselImage
-******
 
+======== 
 `lib/oc/categoryCollapse.js` 
 * Category Collapse (not currently in use)
 
+======== 
 `lib/oc/categoryModal.js` 
 * Category Modal (navigation)
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Category Modal (dev branch)
 - 
-******
 
+======== 
 `lib/oc/fixedFooter.js` 
 * Fixed Footer
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Fixed Footer
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Fixed%20Footer
-******
 
+======== 
 `lib/oc/hamburgerNavigation.js` 
 * Hamburger Navigation (mobile)
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Hamburger Navigation Subcategories
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Hamburger%20Navigation%20Subcategories
-******
 
+======== 
 `lib/oc/largeAddressListSearch.js` 
 * Large Address List Search (checkout)
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Large Address List Search
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Large%20Address%20List%20Search
-******
 
+======== 
 `lib/oc/minicart.js` 
 * Minicart (needs converted)
 
+======== 
 `lib/oc/productLightbox.js` 
 * Product Lightbox
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Product Lightbox
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Lightbox
-******
 
+======== 
 `lib/oc/productListAddToCart.js` 
 * Product List Add To Cart
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Product List Add To Cart
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20List%20Add%20to%20Cart
-******
 
+======== 
 `lib/oc/productZoom.js` 
 * Product Zoom
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Product Zoom
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Zoom
-******
 
+======== 
 `lib/oc/securityModal.js` 
 * Security Modal
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Security Modal
 - https://github.com/Four51Repositories/CustomSolutions/tree/master/Security%20Modal
-******
 
+======== 
 `lib/oc/specForms.js` 
 * OrderCloud - Spec Forms
 
-****** Instructions
+**Instructions**
 * Follow instructions under OrderCloud-SpecForms
 - https://github.com/Four51Repositories/OrderCloud-SpecForms
-******
 
+======== 
 `lib/oc/termsModal.js` 
 * Terms Modal
 
-****** Instructions
+**Instructions**
 * Follow instructions under Custom Solutions Library - Terms Modal (dev branch)
 - https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal
-******
 
+======== 
 
 ##### Custom Views
 ###### html
@@ -177,13 +191,12 @@ Four51: Jen
 `js/services/webMergeService.js` 
 * WebMerge (not currently in use) 
 
+======== 
 
 ##### Modified
 ###### js
 `js/app.js` 
 * 
-
-
 
 ##### html
 `index.html`
