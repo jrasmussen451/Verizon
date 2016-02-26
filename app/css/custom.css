@@ -1912,16 +1912,4 @@ fixedfooter {
     color: #FFF;
     text-decoration:none;
 }
-
-.gototop {
-    position: fixed;
-    bottom: 2px;
-    right: 5px;
-    -webkit-transition: opacity 200ms ease-in-out;
-    transition: opacity 200ms ease-in-out;
-}
-.gototop:not(.active) {
-    opacity: 0;
-    pointer-events: none;
-}
 /*footer area*/
