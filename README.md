@@ -105,7 +105,15 @@ Four51: Jen
 
 ======== 
 `lib/oc/minicart.js` 
-* Minicart (needs converted)
+* Minicart
+
+**Instructions**
+* Follow instructions under Custom Solutions Library - Mini Cart
+- https://github.com/Four51Repositories/CustomSolutions/blob/master/Mini%20Cart/minicart.js
+
+* Specific updates
+- template has specific updates 
+- hide pricing
 
 ======== 
 `lib/oc/productLightbox.js` 
@@ -199,6 +207,9 @@ Four51: Jen
 
 ##### html
 `index.html`
+* 
+
+`partials/controls/orderSummary.html`
 * 
 
 
