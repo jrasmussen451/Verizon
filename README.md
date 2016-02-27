@@ -147,6 +147,15 @@
 
 ========
 
+###### Order Cloud Spec Forms
+`lib/oc/specForms.js`
+
+**Instructions**
+* Follow instructions under Four51 Repositories OrderCloud-SpecForms
+`https://github.com/Four51Repositories/OrderCloud-SpecForms`
+
+========
+
 ###### Product Lightbox
 `lib/oc/productLightbox.js`
 
