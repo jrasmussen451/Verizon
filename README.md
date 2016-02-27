@@ -1,22 +1,34 @@
 #### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) 
 ###### Last Updated: 2/26/16
-======== 
-##### Important Notes! 
-======== 
+
+========
+
+##### Important Notes!
+
+========
+
 ##### Developers
 Four51: Jen
-======== 
+
+========
+
 ##### Github URL
 * github.com/Four51Repositories/Verizon
-======== 
+
+========
+
 ##### Product Detail Template 
 `partials/productDetailTemplate.html`
 * Default PDT in repo
-======== 
+
+========
+
 ##### Product Configuration
 `partials/productDetailTemplate.html`
 * Default PDT in repo
+
 ======== 
+
 ##### Images
 `css/images/custom/` 
 * css/images/custom/background.jpg
@@ -27,13 +39,16 @@ Four51: Jen
 * css/images/help/step4.jpg
 * css/images/help/step5.jpg
 * css/images/products/TABRDN16X271015-installation.jpg
+
 ========
+
 ##### Fonts
 `css/fonts` 
 * NHaasGroteskDSPro-55Rg.otf
 * NHaasGroteskDSPro-75Bd.otf
 * NHaasGroteskTXPro-55Rg.otf
 * NHaasGroteskTXPro-75Bd.otf
+
 ======== 
 ##### OrderCloud modules
 
@@ -45,18 +60,24 @@ Four51: Jen
 **Instructions**
 * Follow instructions under Custom Solutions Library - Add To Cart Preview
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Add%20To%20Cart%20Preview`
+
 ========
+
 ###### Back To Top
 `lib/oc/backToTop.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Back To Top
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Back%20To%20Top`
+
 ========
+
 ###### ??
 `lib/oc/bowser.js`
 * Browser Service
+
 ========
+
 ###### Bootstrap Carousel
 `lib/oc/carousel.js`
 
@@ -66,42 +87,54 @@ Four51: Jen
 
 **Specific naming convention**
 * VerizonCarouselImage
+
 ========
+
 ###### Category Collapse (not in use)
 `lib/oc/categoryCollapse.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Category Collapse
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Category%20Collapse`
+
 ========
+
 ###### Category Modal
 `lib/oc/categoryModal.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Category Modal (in dev branch)
 `https://github.com/Four51Repositories/CustomSolutions/tree/dev/Category%20Modal`
+
 ========
+
 ###### Fixed Footer
 `lib/oc/fixedFooter.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Fixed Footer
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Fixed%20Footer`
+
 ========
+
 ###### Hamburger Navigation
 `lib/oc/hamburgerNavigation.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Hamburger Navigation Subcategories
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Hamburger%20Navigation%20Subcategories`
+
 ========
+
 ###### Large Address List Search
 `lib/oc/largeAddressListSearch.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Large Address List Search
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Large%20Address%20List%20Search`
+
 ========
+
 ###### Minicart
 `lib/oc/minicart.js`
 
@@ -112,27 +145,34 @@ Four51: Jen
 **Specific updates**
 * template has specific updates 
 * hide pricing
+
 ========
+
 ###### Product Lightbox
 `lib/oc/productLightbox.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product Lightbox
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Lightbox`
+
 ========
+
 ###### Product List Add To Cart
 `lib/oc/productListAddToCart.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product List Add To Cart
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20List%20Add%20to%20Cart`
+
 ========
+
 ###### Product Zoom
 `lib/oc/productZoom.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product Zoom
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Zoom`
+
 ========
 
 ###### Security Modal
