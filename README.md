@@ -142,15 +142,6 @@
 `lib/oc/specForms.js`
 
 **Instructions**
-* Follow instructions under OrderCloud-SpecForms
-`https://github.com/Four51Repositories/OrderCloud-SpecForms`
-
-========
-
-###### Order Cloud Spec Forms
-`lib/oc/specForms.js`
-
-**Instructions**
 * Follow instructions under Four51 Repositories OrderCloud-SpecForms
 `https://github.com/Four51Repositories/OrderCloud-SpecForms`
 
