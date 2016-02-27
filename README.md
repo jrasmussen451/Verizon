@@ -1,25 +1,21 @@
-### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) [ Last Update: 2/26/16 ]
+#### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214)  - Last Update: 2/26/16
 
 ========
 
-### Important Notes!
-
-========
-
-###Github URL
+### Github URL
 * github.com/Four51Repositories/Verizon
 
 ========
 
-###Product Detail Template 
+### Product Detail Template 
 `partials/productDetailTemplate.html`
 * Default PDT in repo
 
 ========
 
 ### Product Configuration
-`partials/productDetailTemplate.html`
-* Default PDT in repo
+``
+* 
 
 ======== 
 
@@ -141,6 +137,15 @@
 
 ========
 
+###### Order Cloud Spec Forms
+`lib/oc/specForms.js`
+
+**Instructions**
+* Follow instructions under OrderCloud-SpecForms
+`https://github.com/Four51Repositories/OrderCloud-SpecForms`
+
+========
+
 ###### Product Lightbox
 `lib/oc/productLightbox.js`
 
@@ -174,15 +179,6 @@
 **Instructions**
 * Follow instructions under Custom Solutions Library - Security Modal
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Security%20Modal`
-
-========
-
-###### Order Cloud Spec Forms
-`lib/oc/specForms.js`
-
-**Instructions**
-* Follow instructions under OrderCloud-SpecForms
-`https://github.com/Four51Repositories/OrderCloud-SpecForms`
 
 ========
 
