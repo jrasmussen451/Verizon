@@ -1,35 +1,35 @@
-#### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) 
-###### Last Updated: 2/26/16
+## Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214) 
+##### Last Updated: 2/26/16
 
 ========
 
-##### Important Notes!
+### Important Notes!
 
 ========
 
-##### Developers
+### Developers
 Four51: Jen
 
 ========
 
-##### Github URL
+###Github URL
 * github.com/Four51Repositories/Verizon
 
 ========
 
-##### Product Detail Template 
+###Product Detail Template 
 `partials/productDetailTemplate.html`
 * Default PDT in repo
 
 ========
 
-##### Product Configuration
+### Product Configuration
 `partials/productDetailTemplate.html`
 * Default PDT in repo
 
 ======== 
 
-##### Images
+### Images
 `css/images/custom/` 
 * css/images/custom/background.jpg
 * css/images/logo.png
@@ -42,7 +42,7 @@ Four51: Jen
 
 ========
 
-##### Fonts
+### Fonts
 `css/fonts` 
 * NHaasGroteskDSPro-55Rg.otf
 * NHaasGroteskDSPro-75Bd.otf
@@ -50,8 +50,7 @@ Four51: Jen
 * NHaasGroteskTXPro-75Bd.otf
 
 ======== 
-##### OrderCloud modules
-
+### OrderCloud modules
 
 ###### Add To Cart Preview
 `lib/oc/addToCartPreview.js`
@@ -202,7 +201,7 @@ Four51: Jen
 
 ========
 
-##### Custom Views
+### Custom Views
 ###### html
 `partials/controls/categoryDisplay.html`
 * 
@@ -237,7 +236,7 @@ Four51: Jen
 
 ======== 
 
-##### Modified
+### Modified
 ###### js
 `js/app.js`
 * 
@@ -248,5 +247,3 @@ Four51: Jen
 
 `partials/controls/orderSummary.html`
 * 
-
-
