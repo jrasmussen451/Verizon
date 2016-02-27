@@ -89,11 +89,11 @@
 
 ========
 
-###### Category Modal
+###### Category Modal (module in development)
 `lib/oc/categoryModal.js`
 
 **Instructions**
-* Follow instructions under Custom Solutions Library - Category Modal (in dev branch)
+* Follow instructions under Custom Solutions Library - Category Modal
 `https://github.com/Four51Repositories/CustomSolutions/tree/dev/Category%20Modal`
 
 ========
@@ -183,11 +183,11 @@
 
 ========
 
-###### Terms Modal
+###### Terms Modal (module in development)
 `lib/oc/termsModal.js`
 
 **Instructions**
-* Follow instructions under Custom Solutions Library - Terms Modal (in dev branch)
+* Follow instructions under Custom Solutions Library - Terms Modal
 `https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal`
 
 ========
