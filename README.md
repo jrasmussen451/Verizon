@@ -1,6 +1,5 @@
 ##### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214)
 ##### Last Update: 2/26/16
-
 ========
 
 ### Github URL
@@ -41,7 +40,7 @@
 * NHaasGroteskTXPro-75Bd.otf
 
 ======== 
-### OrderCloud modules
+### OrderCloud Custom Solutions
 
 ###### Add To Cart Preview
 `lib/oc/addToCartPreview.js`
