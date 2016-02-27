@@ -153,6 +153,7 @@ Four51: Jen
 **Instructions**
 * Follow instructions under Custom Solutions Library - Terms Modal (in dev branch)
 `https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal`
+
 ======== 
 
 ##### Custom Views
