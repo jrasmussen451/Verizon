@@ -134,26 +134,32 @@ Four51: Jen
 * Follow instructions under Custom Solutions Library - Product Zoom
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Zoom`
 ========
+
 ###### Security Modal
 `lib/oc/securityModal.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Security Modal
 `https://github.com/Four51Repositories/CustomSolutions/tree/master/Security%20Modal`
+
 ========
+
 ###### Order Cloud Spec Forms
 `lib/oc/specForms.js`
 
 **Instructions**
 * Follow instructions under OrderCloud-SpecForms
 `https://github.com/Four51Repositories/OrderCloud-SpecForms`
+
 ========
+
 ###### Terms Modal
 `lib/oc/termsModal.js`
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Terms Modal (in dev branch)
 `https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal`
+
 ========
 
 ##### Custom Views
