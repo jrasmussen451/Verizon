@@ -42,14 +42,14 @@ Four51: Jen
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Add To Cart Preview
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Add%20To%20Cart%20Preview
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Add%20To%20Cart%20Preview
 ======== 
 `lib/oc/backToTop.js` 
 * Back To Top Arrow
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Back To Top
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Back%20To%20Top
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Back%20To%20Top
 ======== 
 `lib/oc/bowser.js` 
 * Browser Service
@@ -60,17 +60,17 @@ Four51: Jen
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Bootstrap Carousel
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Bootstrap%20Carousel
+*  https://github.com/Four51Repositories/CustomSolutions/tree/master/Bootstrap%20Carousel
 
 * Specific naming convention
-- VerizonCarouselImage
+* VerizonCarouselImage
 ======== 
 `lib/oc/categoryCollapse.js` 
 * Category Collapse (not currently in use)
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Category Collapse
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Category%20Collapse
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Category%20Collapse
 ======== 
 `lib/oc/categoryModal.js` 
 * Category Modal (navigation)
@@ -84,74 +84,74 @@ Four51: Jen
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Fixed Footer
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Fixed%20Footer
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Fixed%20Footer
 ======== 
 `lib/oc/hamburgerNavigation.js` 
 * Hamburger Navigation (mobile)
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Hamburger Navigation Subcategories
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Hamburger%20Navigation%20Subcategories
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Hamburger%20Navigation%20Subcategories
 ======== 
 `lib/oc/largeAddressListSearch.js` 
 * Large Address List Search (checkout)
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Large Address List Search
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Large%20Address%20List%20Search
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Large%20Address%20List%20Search
 ======== 
 `lib/oc/minicart.js` 
 * Minicart
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Mini Cart
-- https://github.com/Four51Repositories/CustomSolutions/blob/master/Mini%20Cart/minicart.js
+*  https://github.com/Four51Repositories/CustomSolutions/blob/master/Mini%20Cart/minicart.js
 
 * Specific updates
-- template has specific updates 
-- hide pricing
+* template has specific updates 
+* hide pricing
 ======== 
 `lib/oc/productLightbox.js` 
 * Product Lightbox
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product Lightbox
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Lightbox
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Lightbox
 ======== 
 `lib/oc/productListAddToCart.js` 
 * Product List Add To Cart
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product List Add To Cart
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20List%20Add%20to%20Cart
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20List%20Add%20to%20Cart
 ======== 
 `lib/oc/productZoom.js` 
 * Product Zoom
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Product Zoom
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Zoom
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Product%20Zoom
 ======== 
 `lib/oc/securityModal.js` 
 * Security Modal
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Security Modal
-- https://github.com/Four51Repositories/CustomSolutions/tree/master/Security%20Modal
+* https://github.com/Four51Repositories/CustomSolutions/tree/master/Security%20Modal
 ======== 
 `lib/oc/specForms.js` 
 * OrderCloud - Spec Forms
 
 **Instructions**
 * Follow instructions under OrderCloud-SpecForms
-- https://github.com/Four51Repositories/OrderCloud-SpecForms
+* https://github.com/Four51Repositories/OrderCloud-SpecForms
 ======== 
 `lib/oc/termsModal.js` 
 * Terms Modal
 
 **Instructions**
 * Follow instructions under Custom Solutions Library - Terms Modal (in dev branch)
-- https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal
+* https://github.com/Four51Repositories/CustomSolutions/tree/dev/Terms%20Modal
 ======== 
 
 ##### Custom Views
