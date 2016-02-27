@@ -1,5 +1,4 @@
 #### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214)  - Last Update: 2/26/16
-
 ========
 
 ### Github URL
@@ -142,6 +141,7 @@
 
 **Instructions**
 * Follow instructions under OrderCloud-SpecForms
+
 `https://github.com/Four51Repositories/OrderCloud-SpecForms`
 
 ========
