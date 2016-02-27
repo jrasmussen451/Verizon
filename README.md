@@ -2,10 +2,10 @@
 ###### Last Updated: 2/26/16
 ======== 
 ##### Important Notes! 
-
+======== 
 ##### Developers
 Four51: Jen
-
+======== 
 ##### Github URL
 * github.com/Four51Repositories/Verizon
 ======== 
@@ -146,6 +146,7 @@ Four51: Jen
 * Follow instructions under OrderCloud-SpecForms
 * https://github.com/Four51Repositories/OrderCloud-SpecForms
 ======== 
+###### Terms Modal
 `lib/oc/termsModal.js` 
 * Terms Modal
 
