@@ -15,6 +15,7 @@
 
 ### Product Configuration
 
+
 ###### Sidebar(1) "Store Essentials"
 * Products assigned to a product category with an Interop ID of **EX_LatestProducts**
 
@@ -22,12 +23,16 @@
 * Category must be active and have assigned products
 * Category must be assigned to the company, group, or user
 
+========
+
 ###### Sidebar(2) "Current Promotions"
 * Products assigned to a product category with an Interop ID of **EX_BestProducts**
 
 **Troubleshooting**
 * Category must be active and have assigned products
 * Category must be assigned to the company, group, or user
+
+========
 
 ###### Tabs 
 `partials/productDescriptionTabsTemplate.html`
@@ -38,6 +43,8 @@
 
 `partials/productDescriptionTabs_TABRDN16X271015.html`
 * TABRDN16X271015 : Better Matters Tablet Wall Graphic
+
+========
 
 ###### Qualities ( New Store Opening, Multiple Languages, Product Video )
 
