@@ -1,15 +1,9 @@
 ##### Taylor Corp - Verizon  / 18.6.2 CT Release and 1.1.3 SPA Release  (1214)
-##### Last Update: 2/26/16
+##### Last Update: 2/28/16
 ========
 
 ### Github URL
-* github.com/Four51Repositories/Verizon
-
-========
-
-### Product Detail Template 
-`partials/productDetailTemplate.html`
-* Default PDT in repo
+* github.com/jrasmussen451/Verizon
 
 ========
 
@@ -70,6 +64,12 @@
 * Spec Value: `<i class="fa fa-video-camera"></i> Product Video`
 
 ======== 
+
+### Product Detail Template 
+`partials/productDetailTemplate.html`
+* Default PDT in repo
+
+========
 
 ### Images
 `css/images/custom/` 
