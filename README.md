@@ -45,18 +45,19 @@
 * The Static Spec Group Name must be Qualities
 * Use the FontAwesome icon library for additional icon options ( https://fortawesome.github.io/Font-Awesome/ ) 
 
-__Examples__
-**New Store Opening**
+**Examples**
+
+*New Store Opening*
 * Static Spec Group Name: Qualities
 * Spec Name: New Store Opening
 * Spec Value: `<i class="fa fa-star"></i> New Store Opening`
 
-**Multiple Languages**
+*Multiple Languages*
 * Static Spec Group Name: Qualities
 * Spec Name: Multiple Languages
 * Spec Value: `<i class="fa fa-language"></i> Multiple Languages`
 
-**Product Video**
+*Product Video*
 * Static Spec Group Name: Qualities
 * Spec Name: Product Video
 * Spec Value: `<i class="fa fa-video-camera"></i> Product Video`
