@@ -42,7 +42,7 @@ four51.app.controller('productListInit', ['$scope', 'User', 'Order', '$location'
                 //$route.reload();
             }
         );
-    }
+    };
 
     function addToOrder(item) {
 
@@ -59,22 +59,13 @@ four51.app.controller('productListInit', ['$scope', 'User', 'Order', '$location'
         $scope.currentOrder.LineItems.push(item);
         $scope.currentOrder.Type = item.PriceSchedule.OrderType;
         $scope.addToOrderIndicator = true;
-    };
+    }
 }]);
 
 four51.app.directive('categorylistview', function() {
     var obj = {
         restrict: "E",
         templateUrl:'partials/categoryList.html'
-    };
-
-    return obj;
-});
-
-four51.app.directive('broadcastview', function() {
-    var obj = {
-        restrict: "E",
-        templateUrl:'partials/CategoryListViews/categoryBroadcastView.html'
     };
 
     return obj;
