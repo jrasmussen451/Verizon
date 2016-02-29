@@ -16,20 +16,18 @@
 ### Product Configuration
 
 ###### Sidebar(1) "Store Essentials"
-``
 * Products assigned to a product category with an Interop ID of **EX_LatestProducts**
 
 **Troubleshooting**
-1. Category must be active and have assigned products
-2. Category must be assigned to the company, group, or user
+* Category must be active and have assigned products
+* Category must be assigned to the company, group, or user
 
 ###### Sidebar(2) "Current Promotions"
-``
 * Products assigned to a product category with an Interop ID of **EX_BestProducts**
 
 **Troubleshooting**
-1. Category must be active and have assigned products
-2. Category must be assigned to the company, group, or user
+* Category must be active and have assigned products
+* Category must be assigned to the company, group, or user
 
 ###### Tabs 
 `partials/productDescriptionTabsTemplate.html`
@@ -44,24 +42,24 @@
 ###### Qualities ( New Store Opening, Multiple Languages, Product Video )
 
 **Instructions**
-1. The Static Spec Group Name must be Qualities
-2. Use the FontAwesome icon library for additional icon options ( https://fortawesome.github.io/Font-Awesome/ ) 
+* The Static Spec Group Name must be Qualities
+* Use the FontAwesome icon library for additional icon options ( https://fortawesome.github.io/Font-Awesome/ ) 
 
 __Examples__
 **New Store Opening**
-Static Spec Group Name: Qualities
-Spec Name: New Store Opening
-Spec Value: <i class="fa fa-star"></i> New Store Opening
+* Static Spec Group Name: Qualities
+* Spec Name: New Store Opening
+* Spec Value: <i class="fa fa-star"></i> New Store Opening
 
 **Multiple Languages**
-Static Spec Group Name: Qualities
-Spec Name: Multiple Languages
-Spec Value: <i class="fa fa-language"></i> Multiple Languages
+* Static Spec Group Name: Qualities
+* Spec Name: Multiple Languages
+* Spec Value: <i class="fa fa-language"></i> Multiple Languages
 
 **Product Video**
-Static Spec Group Name: Qualities
-Spec Name: Product Video
-Spec Value: <i class="fa fa-video-camera"></i> Product Video
+* Static Spec Group Name: Qualities
+* Spec Name: Product Video
+* Spec Value: <i class="fa fa-video-camera"></i> Product Video
 
 ======== 
 
